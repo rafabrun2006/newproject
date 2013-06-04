@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 3.3.3
+- http://www.phpmyadmin.net
+-
+- Servidor: localhost
+- Tempo de Geração: Mai 21, 2013 as 10:23 PM
+- Versão do Servidor: 5.1.50
+- Versão do PHP: 5.3.9-ZS5.6.0
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="financeiro" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="despesa">
+                CREATE TABLE `despesa` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `descricao` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
+                  `valor` double(8,2) NOT NULL,
+                  `data_despesa` date NOT NULL,
+                  `fornecedor_id` int(11) DEFAULT NULL,
+                  `data_pagamento` date NOT NULL,
+                  PRIMARY KEY (`id`),
+                  KEY `fornecedor_id` (`fornecedor_id`),
+                  CONSTRAINT `despesa_ibfk_1` FOREIGN KEY (`fornecedor_id`) REFERENCES `fornecedor` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+                ) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+            </pma:table>
+            <pma:table name="fornecedor">
+                CREATE TABLE `fornecedor` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `nome` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+                  `descricao` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+                  `data_cadastro` date NOT NULL,
+                  `cnpj` int(11) DEFAULT NULL,
+                  `telefone` int(11) DEFAULT NULL,
+                  `email` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+                  `endereco` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+                  `cidade_id` int(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+            </pma:table>
+            <pma:table name="receita">
+                CREATE TABLE `receita` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `descricao` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
+                  `valor` double NOT NULL,
+                  `data` date NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+            </pma:table>
+            <pma:table name="registro_lancamento">
+                CREATE TABLE `registro_lancamento` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `lancamento_id` int(11) NOT NULL,
+                  `data_lancamento` date NOT NULL,
+                  `usuario_id` int(11) NOT NULL,
+                  UNIQUE KEY `id` (`id`),
+                  KEY `usuario_id` (`usuario_id`),
+                  CONSTRAINT `registro_lancamento_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `registro_lancamento` (`usuario_id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="usuario">
+                CREATE TABLE `usuario` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `senha` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+                  `nome` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
+                  `cpf` int(15) NOT NULL,
+                  `email` int(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+            </pma:table>
+            <pma:view name="vw_despesa_fornecedor">
+                CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `financeiro`.`vw_despesa_fornecedor` AS select `d`.`id` AS `id`,`d`.`descricao` AS `descricao`,`d`.`valor` AS `valor`,`d`.`data_despesa` AS `data_despesa`,`d`.`fornecedor_id` AS `fornecedor_id`,`d`.`data_pagamento` AS `data_pagamento`,`f`.`nome` AS `nome`,`f`.`email` AS `email`,`f`.`descricao` AS `fornecedor_descricao`,`f`.`data_cadastro` AS `data_cadastro`,`f`.`cnpj` AS `cnpj`,`f`.`telefone` AS `telefone`,`f`.`endereco` AS `endereco`,`f`.`cidade_id` AS `cidade_id` from (`financeiro`.`despesa` `d` join `financeiro`.`fornecedor` `f` on((`d`.`fornecedor_id` = `f`.`id`)));
+            </pma:view>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Banco de Dados: 'financeiro'
+    -->
+    <database name="financeiro">
+        <!-- Tabela despesa -->
+        <table name="despesa">
+            <column name="id">34</column>
+            <column name="descricao">Compra pe</column>
+            <column name="valor">20.00</column>
+            <column name="data_despesa">2012-02-03</column>
+            <column name="fornecedor_id">5</column>
+            <column name="data_pagamento">0000-00-00</column>
+        </table>
+        <table name="despesa">
+            <column name="id">36</column>
+            <column name="descricao">Pagamento Livro Joomla</column>
+            <column name="valor">40.00</column>
+            <column name="data_despesa">2012-02-03</column>
+            <column name="fornecedor_id">5</column>
+            <column name="data_pagamento">0000-00-00</column>
+        </table>
+        <table name="despesa">
+            <column name="id">43</column>
+            <column name="descricao">Cobran</column>
+            <column name="valor">11.00</column>
+            <column name="data_despesa">2012-02-08</column>
+            <column name="fornecedor_id">5</column>
+            <column name="data_pagamento">0000-00-00</column>
+        </table>
+        <!-- Tabela fornecedor -->
+        <table name="fornecedor">
+            <column name="id">5</column>
+            <column name="nome">Owen</column>
+            <column name="descricao">Informatica</column>
+            <column name="data_cadastro">2012-05-04</column>
+            <column name="cnpj">0</column>
+            <column name="telefone">99031655</column>
+            <column name="email">atendimento@owen.com.br</column>
+            <column name="endereco">GO</column>
+            <column name="cidade_id">0</column>
+        </table>
+        <!-- Tabela receita -->
+        <table name="receita">
+            <column name="id">55</column>
+            <column name="descricao">Salario do Mes</column>
+            <column name="valor">500</column>
+            <column name="data">2012-04-05</column>
+        </table>
+        <table name="receita">
+            <column name="id">58</column>
+            <column name="descricao">vendas do dia</column>
+            <column name="valor">7</column>
+            <column name="data">2012-04-05</column>
+        </table>
+        <!-- Tabela registro_lancamento -->
+        <!-- Tabela usuario -->
+        <table name="usuario">
+            <column name="id">3</column>
+            <column name="senha">ranelore</column>
+            <column name="nome"></column>
+            <column name="cpf">0</column>
+            <column name="email">0</column>
+        </table>
+        <table name="usuario">
+            <column name="id">5</column>
+            <column name="senha">ranelore</column>
+            <column name="nome"></column>
+            <column name="cpf">0</column>
+            <column name="email">0</column>
+        </table>
+    </database>
+</pma_xml_export>

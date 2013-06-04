@@ -1,0 +1,118 @@
+/* 
+    Document   : css
+    Created on : 13/01/2012, 21:36:21
+    Author     : Bruno
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#titulo{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#subtitulo{
+    font-size: 25px;
+    margin: 5px 5px 5px 10px;
+    font-weight: bold;
+}
+#painelsaldo{
+    font-size: 9px;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    width: 400px;
+    float: right;
+    padding: 5px;
+}
+#esquerdo{
+    width: 99%;
+    float: left;
+    border: 1px solid;
+    padding: 5px;
+    overflow: auto;
+    border-radius: 5px;
+    height: 420px;
+}
+#menuprincipal{
+    width: 500px;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 5px;
+    padding-right: 3px;
+}
+#menuprincipal a{
+    color: blue;
+    width: 40px;
+}
+#menuprincipal img{
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+}
+
+.submenu{
+    font-size: 18px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    border-bottom: solid 1px black;
+}
+.submenu a{
+    text-decoration: none;
+    border-radius: 2px;
+}
+.tabela{
+    border: 1px solid;
+    width: 98%;
+}
+.tabela tr td{
+    border: solid 1px black;
+}
+.tabela img{
+    height: 15px;
+    width: 15px;
+}
+.tabela #centro{
+    text-align: center;
+}
+.formulario{
+    width: auto;
+    margin-left: 10px;
+}
+.formulario input{
+    background-color: lightblue;
+}
+.formulario select{
+    background-color: lightblue;
+}
+#excluir{
+    height: 40px;
+    width: 30px;
+}
+#editar{
+    height: 40px;
+    width: 30px;
+}
+
+#login{
+	margin-left: 37%;
+	margin-top:10%;
+	text-align: right;
+	width: 500px;
+	padding: 10px;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+}
