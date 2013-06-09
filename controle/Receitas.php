@@ -15,53 +15,58 @@ require_once 'modelo/Receitas.php';
 
 class ControleReceitas extends ModeloReceitas {
 
-    var $receitas;
+    public $receitas;
 
-    function acaoReceitas($acao = null) {
-        ControleConexao::conexao();
+    public function acaoReceitas($acao = null) {
         $this->receitas = new ControleReceitas();
 
-        if (empty($acao)) {
-            $this->receitas = $this->listarReceitas();
-            return $this->receitas;
-        } else if ($acao == 'gravar') {
-            $data = date('Y-m-d', strtotime($_REQUEST['data']));
-            $array = array($_REQUEST['nome'], $_REQUEST['valor'], $data);
-
-            if (!empty($array[0]) && (!empty($array[1])) && (!empty($array[2]))) {
-                $this->receitas->gravarReceitas($array);
-                echo 'Dados gravados com sucesso';
-            } else {
-                echo 'Houve um problema na gravacao dos dados';
-            }
-
-            return $this->acaoReceitas();
-        } else if ($acao == 'excluir') {
-
-            for ($i = 0; $i < count($_REQUEST['cod']); $i++) {
-                $array[] = $_REQUEST['cod'][$i];
-            }
-
-            $this->excluirReceitas($array);
-
-            return $this->acaoReceitas();
-        } else if ($acao == 'editar') {
-            $data = date('Y-m-d', strtotime($_REQUEST['data']));
-            $array = array($_REQUEST['cod'], $_REQUEST['nome'], $_REQUEST['valor'], $data);
-            
-            if(!empty($array[0])&&(!empty($array[1]))&&(!empty($array[2]))&&(!empty($array[3]))){
-                $this->receitas->editarReceitas($array);
-                echo "Dados gravados com sucesso";
-            }else{
-                echo "N&atilde;o s&atilde;o aceitos campos vazios";
-            }
-
-            return $this->acaoReceitas();
+        if (method_exists($this, $acao)) {
+            return $this->$acao();
         } else {
-            return $this->acaoReceitas();
+            return $this->receitas = $this->listarReceitas();
         }
     }
 
-}
+    public function gravar() {
+        if ($_POST) {
+            $_REQUEST['data'] = date('Y-m-d', strtotime($_REQUEST['data']));
 
-?>
+            if ($_REQUEST) {
+                $modelo = new ModeloReceitas();
+                if ($modelo->gravarReceitas($_REQUEST)) {
+                    ControleMensagem::setMensagem(array('success', 'Dados gravados com sucesso'));
+                    header('Location: index.php?url=receitas/receitas');
+                }
+            } else {
+                ControleMensagem::setMensagem(array('danger', 'Houve um problema na gravacao dos dados'));
+            }
+        }
+
+        return $this->acaoReceitas();
+    }
+
+    public function excluir() {
+        $this->excluirReceitas('id = ' . $_REQUEST['id']);
+        return $this->acaoReceitas();
+    }
+
+    public function editar() {
+
+        if ($_POST) {
+            $$_REQUEST['data'] = date('Y-m-d', strtotime($_REQUEST['data']));
+
+            if ($_REQUEST) {
+                $modelo = new ModeloReceitas();
+                if ($modelo->editarReceitas($_REQUEST)) {
+                    ControleMensagem::setMensagem(array('success', 'Dados gravados com sucesso'));
+                    header('Location: index.php?url=receitas/receitas');
+                }
+            } else {
+                ControleMensagem::setMensagem(array('success', 'N&atilde;o s&atilde;o aceitos campos vazios'));
+            }
+        }
+
+        return $this->getReceita($_REQUEST['id']);
+    }
+
+}

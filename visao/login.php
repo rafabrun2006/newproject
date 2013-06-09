@@ -1,16 +1,24 @@
-<div id='login' align="center">
+<div id="login" align="center">
     Por favor, informe usuario e senha para que possa ter acesso ao sistema.
     <br>
-    <font color="red">Se ainda n&atilde;o tem acesso coloque um usuario e senha e clique em registrar.</font>
-    <p>
-    <form action="index.php" method="post">
-        Usuario: <input onfocus autofocus type="text" name="usuario">
-        <br>
-        Senha: <input type="password" name="senha">
-        <br>
-        <br>
-        <input type="submit" name="bt" value="Entrar">
-        <input type="submit" name="bt" value="Registrar">
-        <input type="hidden" value="acessar" name="acao">
+    <br>
+    <form class="form form-horizontal" action="index.php" method="post">
+        <div class="control-group">
+            <label class="control-label"><strong>Usuario:</strong></label> 
+            <div class="controls">
+                <input onfocus autofocus type="text" name="usuario">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label"><strong>Senha:</strong></label> 
+            <div class="control">
+                <input type="password" name="senha">
+            </div>
+        </div>
+        <div class="form-actions">
+            <button class="btn btn-primary" type="submit" name="bt">Entrar</button>
+            <button class="btn" type="reset" name="bt">Limpar</button>
+            <input type="hidden" value="acessar" name="acao">
+        </div>
     </form>
 </div>

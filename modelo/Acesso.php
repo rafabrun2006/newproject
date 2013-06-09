@@ -1,55 +1,66 @@
 <?php
+
 /**
  * Description of Acesso
  *
  * author Bruno
  */
 class ModeloAcesso {
-    
-    var $usuario;
-    var $senha;
-    
-    function getUsuario(){
-        return $_SESSION['id'];
+
+    public $id;
+    public $nome;
+    public $email;
+    public $senha;
+    public $cpf;
+
+    public function getSession($sessionId) {
+        return @$_SESSION['auth'][$sessionId];
     }
-    function setUsuario($usuario){
-        $_SESSION['id'] = $usuario;
+
+    public function setSession($sessionId, $sessionValue) {
+        $_SESSION['auth'][$sessionId] = $sessionValue;
     }
-    function setCodigo($codigo){
-        $_SESSION['cod'] = $codigo;
+
+    public function getSessionUsuario() {
+        $acesso = new ModeloAcesso();
+        $acesso->id = $acesso->getSession('id');
+        $acesso->nome = $acesso->getSession('nome');
+        $acesso->email = $acesso->getSession('email');
+        $acesso->senha = $acesso->getSession('senha');
+        $acesso->cpf = $acesso->getSession('cpf');
+
+        return $acesso;
     }
-    function getCodigo(){
-        return $_SESSION['cod'];
-    }
-    
-    function acessar($usuario, $senha){
-    
-        $query = "SELECT nome_usuario, senha, cod FROM usuarios WHERE nome_usuario = '".$usuario."' and senha= '".$senha."'";
-        if($result = mysql_query($query)){
-        
-	        while($res = mysql_fetch_array($result)){
-	            $acesso = new ModeloAcesso();
-	            $acesso->setUsuario($res['nome_usuario']);
-	            $acesso->setCodigo($res['cod']);
-	        }
-            return $acesso;
-        }else{
-        	return false;
+
+    public function acessar($usuario, $senha) {
+
+        $query = "SELECT * FROM tb_usuario WHERE nome = '" . $usuario . "' and senha= '" . $senha . "'";
+        $result = mysql_query($query);
+
+        if ($result) {
+            $res = mysql_fetch_object($result);
+
+            $acesso = new ModeloAcesso();
+            $acesso->setSession('nome', $res->nome);
+            $acesso->setSession('id', $res->id);
+            $acesso->setSession('email', $res->email);
+            $acesso->setSession('senha', $res->senha);
+            $acesso->setSession('cpf', $res->cpf);
         }
     }
-   
-    public function cadastro($usuario, $senha){
+
+    public function cadastro($usuario, $senha) {
         $query = "INSERT INTO usuarios (nome_usuario, senha) VALUES ('$usuario', '$senha')";
-        if($result = mysql_query($query)==true){
+        if ($result = mysql_query($query) == true) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
-    function sair(){
+
+    public function sair() {
         session_destroy();
         $_SESSION['id'] = null;
     }
-}
 
-?>
+}

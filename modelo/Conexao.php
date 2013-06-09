@@ -19,7 +19,8 @@ class ModeloConexao {
         
         $conexao = mysql_connect($config->servidor, $config->nomeusuario, $config->senhausuario);
         if($conexao){
-            echo "conectado";
+            
+            //echo "conectado";
         }else{
             return "Houve um erro no sistema";
         }

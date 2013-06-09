@@ -1,10 +1,5 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * Description of Acesso
  *
@@ -15,47 +10,23 @@ require_once 'modelo/Acesso.php';
 
 class ControleAcesso extends ModeloAcesso {
 
-    var $usuario;
-    var $codigo;
-
-    function getUsuario() {
-        return parent::getUsuario();
-    }
-    function getCodigo(){
-        return parent::getCodigo();
-    }
-    function setCodigo($codigo) {
-        $this->codigo = $codigo;
-    }
-    function setUsuario($usuario) {
-        $this->usuario = $usuario;
+    public static function getUsuario() {
+        $modelo = new ModeloAcesso();
+        return $modelo->getSessionUsuario();
     }
 
-    function getUser() {
-        $acesso = new ControleAcesso();
-        $acesso->setUsuario(parent::getUsuario());
-        $acesso->setCodigo(parent::getCodigo());
-        return $acesso;
-    }
+    public function acessar() {
+        ControleConexao::conexao();
 
-    function acessar() {
-            ControleConexao::conexao();
-            
-            if (!empty($_REQUEST['usuario']) && !empty($_REQUEST['senha']) && ($_REQUEST['acao'] == 'acessar')) {
-                if($_REQUEST['bt']=='Entrar'){
-                    parent::acessar($_REQUEST['usuario'], $_REQUEST['senha']);
-                }
-                if($_REQUEST['bt']=='Registrar'){
-                    if(parent::cadastro($_REQUEST['usuario'], $_REQUEST['senha'])==true){
-                        echo "Usuario registrado com sucesso, agora e so utiliza-lo para acessar o sistema.";
-                    }else{
-                        echo "Este usuario ja se encontra cadastrado, utilize outro usuario";
-                    }
-                }
-            } else if (@$_REQUEST['acao'] == 'sair') {
-                parent::sair();
+        if (!empty($_REQUEST['usuario']) && !empty($_REQUEST['senha']) && ($_REQUEST['acao'] == 'acessar')) {
+            if ($_REQUEST['acao'] == 'acessar') {
+                parent::acessar($_REQUEST['usuario'], $_REQUEST['senha']);
             }
+        } else if (@$_REQUEST['acao'] == 'sair') {
+            parent::sair();
         }
     }
+
+}
 
 ?>

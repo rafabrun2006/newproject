@@ -1,5 +1,4 @@
 <?php
-
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -10,107 +9,153 @@
  *
  * author Bruno
  */
-class ModeloFornecedores {
-    
-    var $nome;
-    var $cod;
-    var $descricao;
-    var $data_cadastro;
-    var $cnpj;
-    var $telefone;
-    var $email;
-    var $uf;
-    
-    function getNome(){
+require_once '/modelo/Modelo.php';
+
+class ModeloFornecedores extends Modelo {
+
+    private $id;
+    private $nome;
+    private $descricao;
+    private $data_cadastro;
+    private $cnpj;
+    private $telefone;
+    private $email;
+    private $endereco;
+    private $cidade;
+    protected $_table = 'tb_fornecedor';
+    protected $_primary = 'id';
+    protected $_fields = array('id', 'nome', 'descricao', 'data_cadastro', 'cnpj', 'telefone', 'email', 'endereco', 'cidade');
+
+    public function getId() {
+        return $this->id;
+    }
+
+    public function setId($id) {
+        $this->id = $id;
+    }
+
+    public function getNome() {
         return $this->nome;
     }
-    function setNome($nome){
+
+    public function setNome($nome) {
         $this->nome = $nome;
     }
-    function getCod(){
-        return $this->cod;
-    }
-    function setCod($codigo){
-        $this->cod = $codigo;
-    }
-    function getDescricao(){
+
+    public function getDescricao() {
         return $this->descricao;
     }
-    function setDescricao($descricao){
+
+    public function setDescricao($descricao) {
         $this->descricao = $descricao;
     }
-    function getDataCad(){
+
+    public function getData_cadastro() {
         return $this->data_cadastro;
     }
-    function setDataCad($data_cadastro){
-        $this->data_cadastro = date('d/m/Y', strtotime($data_cadastro));
+
+    public function setData_cadastro($data_cadastro) {
+        $this->data_cadastro = $data_cadastro;
     }
-    function getCNPJ(){
+
+    public function getCnpj() {
         return $this->cnpj;
     }
-    function setCNPJ($cnpj){
+
+    public function setCnpj($cnpj) {
         $this->cnpj = $cnpj;
     }
-    function getTelefone(){
+
+    public function getTelefone() {
         return $this->telefone;
     }
-    function setTelefone($telefone){
+
+    public function setTelefone($telefone) {
         $this->telefone = $telefone;
     }
-    function getEmail(){
+
+    public function getEmail() {
         return $this->email;
     }
-    function setEmail($email){
+
+    public function setEmail($email) {
         $this->email = $email;
     }
-    function getUF(){
-        return $this->uf;
+
+    public function getEndereco() {
+        return $this->endereco;
     }
-    function setUF($uf){
-        $this->uf = $uf;
+
+    public function setEndereco($endereco) {
+        $this->endereco = $endereco;
     }
-    
-    function listaFornecedores(){
-        $query = "SELECT * FROM fornecedores WHERE cod_user = ".ControleAcesso::getUser()->codigo;
+
+    public function getCidade() {
+        return $this->cidade;
+    }
+
+    public function setCidade($cidade) {
+        $this->cidade = $cidade;
+    }
+
+    function listaFornecedores() {
+        $query = 'SELECT * FROM tb_fornecedor';
         $result = mysql_query($query);
-        
-        while($res = mysql_fetch_array($result)){
-            $Forn = new ModeloFornecedores();
-            $Forn->setNome($res['nome']);
-            $Forn->setCod($res['cod']);
-            $Forn->setCNPJ($res['cnpj']);
-            $Forn->setEmail($res['email']);
-            $Forn->setDataCad($res['data_cadastro']);
-            $Forn->setDescricao($res['descricao']);
-            $Forn->setTelefone($res['telefone']);
-            $Forn->setUF($res['uf']);
-            $lista[] = $Forn;
+
+        $lista = array();
+
+        while ($res = mysql_fetch_array($result)) {
+            $forn = new ModeloFornecedores();
+            $forn->setNome($res['nome']);
+            $forn->setId($res['id']);
+            $forn->setCnpj($res['cnpj']);
+            $forn->setEmail($res['email']);
+            $forn->setData_cadastro($res['data_cadastro']);
+            $forn->setDescricao($res['descricao']);
+            $forn->setTelefone($res['telefone']);
+            $forn->setCidade($res['cidade']);
+            $forn->setEndereco($res['endereco']);
+            
+            $lista[] = $forn;
         }
         return $lista;
     }
-    
-    function excluirFornecedores($item){
-        $query = "DELETE FROM fornecedores WHERE cod = $item";
-        if(mysql_query($query)){
-            return true;
-        }
-    }
-    
-    function editarFornecedores($array){
-        $query = "UPDATE fornecedores SET nome='$array[nome]', descricao='$array[descricao]', data_cadastro='$array[data_cadastro]', cnpj='$array[cnpj]', telefone='$array[telefone]', email='$array[email]', uf='$array[uf]' WHERE cod = '$array[cod]'";
-        if(mysql_query($query)){
-            return true;
-        }
-    }
-    
-    function gravarFornecedores($array){
-        echo $query = "INSERT INTO fornecedores (nome, descricao, data_cadastro, cnpj, telefone, email, uf, cod_user) 
-        VALUES('$array[nome]', '$array[descricao]', '$array[data_cadastro]', '$array[cnpj]', '$array[telefone]', '$array[email]', '$array[uf]', '".ControleAcesso::getUser()->codigo."')";
-        if(mysql_query($query)){
-            return true;
-        }
-    }
-    
-}
 
-?>
+    function excluirFornecedores($where) {
+        return $this->delete($where);
+    }
+
+    function editarFornecedores($array) {
+        if ($this->update($array)) {
+            return true;
+        }
+    }
+
+    function gravarFornecedores($array) {
+        if ($this->insert($array)) {
+            return true;
+        }
+    }
+
+    public function getFornecedor($id) {
+        $query = 'SELECT * FROM tb_fornecedor WHERE id = '.$id;
+        
+        $result = mysql_query($query);
+
+        $res = mysql_fetch_array($result);
+        
+        $forn = new ModeloFornecedores();
+        $forn->setNome($res['nome']);
+        $forn->setId($res['id']);
+        $forn->setCnpj($res['cnpj']);
+        $forn->setEmail($res['email']);
+        $forn->setData_cadastro($res['data_cadastro']);
+        $forn->setDescricao($res['descricao']);
+        $forn->setTelefone($res['telefone']);
+        $forn->setCidade($res['cidade']);
+        $forn->setEndereco($res['endereco']);
+
+        return $forn;
+    }
+
+}

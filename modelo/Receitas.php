@@ -10,77 +10,115 @@
  *
  * @author Bruno
  */
+require_once '/modelo/Modelo.php';
 
-class ModeloReceitas {
-    
-    var $cod;
-    var $nome;
-    var $data;
-    var $valor;
-    
-    function getCod(){
-        return $this->cod;
+class ModeloReceitas extends Modelo {
+
+    private $id;
+    private $descricao;
+    private $data;
+    private $valor;
+    private $tipo_id_lancamento;
+    private $usuario_id;
+    protected $_fields = array('id', 'descricao', 'data', 'valor', 'tipo_lancamento_id', 'usuario_id');
+    protected $_table = 'tb_receita';
+    protected $_primary = 'id';
+
+    public function getId() {
+        return $this->id;
     }
-    function setCod($cod){
-        $this->cod = $cod;
+
+    public function setId($id) {
+        $this->id = $id;
     }
-    function getNome(){
-        return $this->nome;
+
+    public function getDescricao() {
+        return $this->descricao;
     }
-    function setNome($nome){
-        $this->nome = $nome;
+
+    public function setDescricao($descricao) {
+        $this->descricao = $descricao;
     }
-    function getData(){
+
+    public function getData() {
         return $this->data;
     }
-    function setData($data){
-        $this->data = date('d/m/Y', strtotime($data));
+
+    public function setData($data) {
+        $this->data = $data;
     }
-    function getValor(){
+
+    public function getValor() {
         return $this->valor;
     }
-    function setValor($valor){
-        $this->valor = "$valor,00";
+
+    public function setValor($valor) {
+        $this->valor = $valor;
     }
-    
-    function listarReceitas(){
-        
-        $query = "SELECT * FROM receitas WHERE cod_user = ".ControleAcesso::getUser()->codigo;
+
+    public function getTipo_id_lancamento() {
+        return $this->tipo_id_lancamento;
+    }
+
+    public function setTipo_id_lancamento($tipo_id_lancamento) {
+        $this->tipo_id_lancamento = $tipo_id_lancamento;
+    }
+
+    public function getUsuario_id() {
+        return $this->usuario_id;
+    }
+
+    public function setUsuario_id($usuario_id) {
+        $this->usuario_id = $usuario_id;
+    }
+
+    public function listarReceitas() {
+
+        $query = "SELECT * FROM tb_receita WHERE usuario_id = " . ControleAcesso::getUsuario()->id;
         $result = mysql_query($query);
-        
-        while($res = mysql_fetch_array($result)){
+
+        $array = array();
+
+        while ($res = mysql_fetch_array($result)) {
             $receitas = new ModeloReceitas();
-            $receitas->setCod($res['cod']);
-            $receitas->setNome($res['nome']);
+            $receitas->setId($res['id']);
+            $receitas->setDescricao($res['descricao']);
             $receitas->setValor($res['valor']);
             $receitas->setData($res['data']);
             $array[] = $receitas;
         }
         return $array;
     }
-    
-    function gravarReceitas($array){
-        
-        $query = "INSERT INTO receitas (nome, valor, data, cod_user) VALUES('$array[0]', '$array[1]', '$array[2]', '".ControleAcesso::getUser()->codigo."')";
-        $result = mysql_query($query);
-        
-        if($result){
+
+    public function gravarReceitas($array) {
+        ControleConexao::conexao();
+
+        if ($this->insert($array)) {
             return true;
         }
     }
-    
-    function excluirReceitas($array){
-        
-        for($i=0;$i<count($array);$i++){
-            $query = "DELETE FROM receitas WHERE cod=$array[$i]";
-            mysql_query($query);
-        }
-    }
-    
-    function editarReceitas($array){
-        $query = "UPDATE receitas SET nome='$array[1]', valor='$array[2]', data='$array[3]' WHERE cod='$array[0]'";
-        $result = mysql_query($query);
-    }
-}
 
-?>
+    public function excluirReceitas($where) {
+        return $this->delete($where);
+    }
+
+    public function editarReceitas($array) {
+        return $this->update($array);
+    }
+
+    public function getReceita($idReceita) {
+        $query = "SELECT * FROM tb_receita WHERE id = " . $idReceita;
+        $result = mysql_query($query);
+
+        $res = mysql_fetch_array($result);
+
+        $this->setId($res['id']);
+        $this->setDescricao($res['descricao']);
+        $this->setValor($res['valor']);
+        $this->setData($res['data']);
+        $this->setUsuario_id($res['usuario_id']);
+
+        return $this;
+    }
+
+}

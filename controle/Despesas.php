@@ -15,55 +15,69 @@ require_once 'controle/Fornecedores.php';
 
 class ControleDespesas extends ModeloDespesas {
 
-    var $despesas;
+    public $despesas;
 
-    function acaoDespesas($acao = null) {
+    public function acaoDespesas($acao = null) {
         ControleConexao::conexao();
         $this->despesas = new ControleDespesas();
 
-        if (empty($acao)) {
+        if (method_exists($this, $acao)) {
+            return $this->$acao();
+        } else {
             $this->despesas = $this->listarDespesa();
             return $this->despesas;
-        } else if ($acao == 'gravar') {
+        }
+    }
 
-            $array = array('nome'=>$_REQUEST['nome'], 
-                           'valor'=>$_REQUEST['valor'], 
-                           'data'=>date('Y-m-d', strtotime($_REQUEST['data'])), 
-                           'fornecedor'=>$_REQUEST['fornecedor']);
+    public static function fornecedores() {
+        $fornecedor = new ControleFornecedores();
+        return $fornecedor->acaoFornecedor(null);
+    }
 
-            if (!empty($array['nome']) && (!empty($array['valor'])) && (!empty($array['data']) && (isset($array['fornecedor'])))) {
-                echo $this->despesas->gravarDespesa($array) == true ? 'Dados gravados com sucesso' : '';
+    public function editar() {
+
+        if ($_POST) {
+            $_REQUEST['data_despesa'] = date('Y-m-d', strtotime($_REQUEST['data_despesa']));
+            $_REQUEST['data_pagamento'] = date('Y-m-d', strtotime($_REQUEST['data_pagamento']));
+
+            if ($_REQUEST) {
+                if ($this->despesas->editarDespesas($_REQUEST)) {
+
+                    ControleMensagem::setMensagem(array('success', 'Dados gravados com sucesso'));
+                    header('Location: index.php?url=despesas/despesas');
+                }
             } else {
-                echo 'Houve um problema na gravacao dos dados';
-            }
-
-        } else if ($acao == 'excluir') {
-
-            for ($i = 0; $i < count($_REQUEST['cod']); $i++) {
-                $array[] = $_REQUEST['cod'][$i];
-            }
-
-            $this->excluirDespesa($array);
-
-        } else if ($acao == 'editar') {
-            $data = date('Y-m-d', strtotime($_REQUEST['data']));
-            $array = array($_REQUEST['cod'], $_REQUEST['nome'], $_REQUEST['valor'], $data);
-
-            if (!empty($array[0]) && (!empty($array[1])) && (!empty($array[2])) && (!empty($array[3]))) {
-                $this->despesas->editarDespesas($array);
-                echo "Dados gravados com sucesso";
-            } else {
-                echo "N&atilde;o s&atilde;o aceitos campos vazios";
+                ControleMensagem::setMensagem(array('danger', 'N&atilde;o s&atilde;o aceitos campos vazios'));
+                header('Location: index.php?url=despesas/despesas');
             }
         }
-        
-        return $this->acaoDespesas();
+
+        return $this->getDespesa($_REQUEST['id']);
     }
-    
-    function fornecedores(){
-        return $fornecedores = new ControleFornecedores();
+
+    public function gravar() {
+
+        if ($_POST) {
+            $_REQUEST['data_despesa'] = date('Y-m-d', strtotime($_REQUEST['data_despesa']));
+            $_REQUEST['data_pagamento'] = date('Y-m-d', strtotime($_REQUEST['data_pagamento']));
+
+            if ($_REQUEST) {
+                if ($this->despesas->gravarDespesa($_REQUEST)) {
+                    ControleMensagem::setMensagem(array('success', 'Dados gravados com sucesso'));
+                    header('Location: index.php?url=despesas/despesas');
+                }
+            } else {
+                ControleMensagem::setMensagem(array('danger', 'N&atilde;o s&atilde;o aceitos campos vazios'));
+                header('Location: index.php?url=despesas/despesas');
+            }
+        }
+    }
+
+    public function excluir() {
+        if ($this->excluirDespesa('id = ' . $_REQUEST['id'])) {
+            ControleMensagem::setMensagem(array('success', 'Dados apagados com sucesso'));
+            header('Location: index.php?url=despesas/despesas');
+        }
     }
 
 }
-
-?>

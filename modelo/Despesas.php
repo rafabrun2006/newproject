@@ -1,93 +1,142 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * Description of Receitas
  *
  * author Bruno
  */
+require_once '/modelo/Modelo.php';
 
-class ModeloDespesas {
-    
-    var $cod;
-    var $nome;
-    var $data;
-    var $fornecedor;
-    var $valor;
-    
-    function getCod(){
-        return $this->cod;
+class ModeloDespesas extends Modelo {
+
+    private $id;
+    private $fornecedor_id;
+    private $usuario_id;
+    private $tipo_lancamento_id;
+    private $descricao;
+    private $valor;
+    private $data_despesa;
+    private $data_pagamento;
+    protected $_fields = array('id', 'fornecedor_id', 'usuario_id', 'tipo_lancamento_id', 'descricao', 'valor', 'data_despesa', 'data_pagamento');
+    protected $_primary = 'id';
+    protected $_table = 'tb_despesa';
+
+    public function getId() {
+        return $this->id;
     }
-    function setCod($cod){
-        $this->cod = $cod;
+
+    public function setId($id) {
+        $this->id = $id;
     }
-    function getNome(){
-        return $this->nome;
+
+    public function getFornecedor_id() {
+        return $this->fornecedor_id;
     }
-    function setNome($nome){
-        $this->nome = $nome;
+
+    public function setFornecedor_id($fornecedor_id) {
+        $this->fornecedor_id = $fornecedor_id;
     }
-    function getValor(){
+
+    public function getUsuario_id() {
+        return $this->usuario_id;
+    }
+
+    public function setUsuario_id($usuario_id) {
+        $this->usuario_id = $usuario_id;
+    }
+
+    public function getTipo_lancamento_id() {
+        return $this->tipo_lancamento_id;
+    }
+
+    public function setTipo_lancamento_id($tipo_lancamento_id) {
+        $this->tipo_lancamento_id = $tipo_lancamento_id;
+    }
+
+    public function getDescricao() {
+        return $this->descricao;
+    }
+
+    public function setDescricao($descricao) {
+        $this->descricao = $descricao;
+    }
+
+    public function getValor() {
         return $this->valor;
     }
-    function setValor($valor){
+
+    public function setValor($valor) {
         $this->valor = $valor;
     }
-    function getData(){
-        return $this->data;
+
+    public function getData_despesa() {
+        return date('d/m/Y', strtotime($this->data_despesa));
     }
-    function setData($data){
-        $this->data = date('d/m/Y', strtotime($data));
+
+    public function setData_despesa($data_despesa) {
+        $this->data_despesa = $data_despesa;
     }
-    function getFornecedor(){
-        return $this->fornecedor;
+
+    public function getData_pagamento() {
+        return date('d/m/Y', strtotime($this->data_pagamento));
     }
-    function setFornecedor($fornecedor){
-        $this->fornecedor = $fornecedor;
+
+    public function setData_pagamento($data_pagamento) {
+        $this->data_pagamento = $data_pagamento;
     }
-    
-    function listarDespesa(){
-        $query = "SELECT * FROM despesas WHERE cod_user = ".ControleAcesso::getUser()->codigo;
+
+    public function listarDespesa() {
+        $query = 'SELECT * FROM tb_despesa';
         $result = mysql_query($query);
-        
-        while($res = mysql_fetch_array($result)){
+
+        $array = array();
+
+        while ($res = mysql_fetch_array($result)) {
             $receitas = new ModeloDespesas();
-            $receitas->setCod($res['cod']);
-            $receitas->setNome($res['nome']);
+            $receitas->setId($res['id']);
+            $receitas->setDescricao($res['descricao']);
             $receitas->setValor($res['valor']);
-            $receitas->setData($res['data']);
-            $receitas->setFornecedor(($res['fornecedor']));
+            $receitas->setData_despesa($res['data_despesa']);
+            $receitas->setFornecedor_id(($res['fornecedor_id']));
             $array[] = $receitas;
         }
         return $array;
     }
-    
-    function gravarDespesa($array){
-        
-        $query = "INSERT INTO despesas (nome, valor, data, fornecedor, cod_user) VALUES('$array[nome]', '$array[valor]', '$array[data]', '$array[fornecedor]', '".ControleAcesso::getUser()->codigo."')";
-        $result = mysql_query($query);
-        
-        if($result){
+
+    public function gravarDespesa($array) {
+        if ($this->insert($array)) {
             return true;
         }
     }
-    
-    function excluirDespesa($array){
-        
-        for($i=0;$i<count($array);$i++){
-            $query = "DELETE FROM despesas WHERE cod=$array[$i]";
-            mysql_query($query);
+
+    public function excluirDespesa($where) {
+        if ($this->delete($where)) {
+            return true;
         }
     }
-    
-    function editarDespesas($array){
-        $query = "UPDATE despesas SET nome='$array[1]', valor='$array[2]', data='$array[3]' WHERE cod='$array[0]'";
-        $result = mysql_query($query);
-    }
-}
 
-?>
+    public function editarDespesas($array) {
+        if ($this->update($array)) {
+            return true;
+        }
+    }
+
+    public function getDespesa($id) {
+        $query = 'SELECT * FROM tb_despesa WHERE id = ' . $id;
+        $result = mysql_query($query);
+
+        $res = mysql_fetch_array($result);
+        $receitas = new ModeloDespesas();
+        
+        $receitas->setId($res['id']);
+        $receitas->setDescricao($res['descricao']);
+        $receitas->setValor($res['valor']);
+        $receitas->setData_despesa($res['data_despesa']);
+        $receitas->setData_pagamento($res['data_pagamento']);
+        $receitas->setFornecedor_id($res['fornecedor_id']);
+        $receitas->setTipo_lancamento_id($res['tipo_lancamento_id']);
+
+        return $receitas;
+    }
+
+}
