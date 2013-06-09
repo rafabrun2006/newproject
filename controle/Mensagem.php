@@ -8,7 +8,7 @@
 /**
  * Description of Mensagem
  *
- * @author Bruno
+ * @author Administrador
  */
 class ControleMensagem {
 

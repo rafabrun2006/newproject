@@ -3,7 +3,7 @@
 /**
  * Description of Acesso
  *
- * @author Bruno
+ * @author Administrador
  */
 require_once 'controle/Conexao.php';
 require_once 'modelo/Acesso.php';

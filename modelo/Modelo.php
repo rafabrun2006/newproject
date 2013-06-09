@@ -3,7 +3,7 @@
 /**
  * Description of Modelo
  *
- * @author Bruno
+ * @author Administrador
  */
 require_once '/controle/Conexao.php';
 

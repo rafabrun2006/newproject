@@ -11,9 +11,9 @@
 <a:Name>Modelo Fisico</a:Name>
 <a:Code>MODELO_FISICO</a:Code>
 <a:CreationDate>1370274049</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370360702</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
 [FolderOptions\Physical Objects]
@@ -2453,9 +2453,9 @@ PhysOpts=</a:ModelOptionsText>
 <a:Name>MySQL 5.0</a:Name>
 <a:Code>MYSQL50</a:Code>
 <a:CreationDate>1370274047</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274047</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:TargetStereotype/>
 <a:TargetID>F4F16ECD-F2F1-4006-AF6F-638D5C65F35E</a:TargetID>
 <a:TargetClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetClassID>
@@ -2467,9 +2467,9 @@ PhysOpts=</a:ModelOptionsText>
 <a:Name>PhysicalDiagram_1</a:Name>
 <a:Code>PHYSICALDIAGRAM_1</a:Code>
 <a:CreationDate>1370274030</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277248</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DisplayPreferences>[DisplayPreferences]
 
 [DisplayPreferences\PDM]
@@ -3268,9 +3268,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>tb_despesa</a:Name>
 <a:Code>tb_despesa</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277105</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:PhysicalOptions>ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=47</a:PhysicalOptions>
 <a:TotalSavingCurrency/>
 <c:Columns>
@@ -3279,9 +3279,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>id</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274874</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 <a:Mandatory>1</a:Mandatory>
@@ -3291,9 +3291,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>fornecedor_id</a:Name>
 <a:Code>fornecedor_id</a:Code>
 <a:CreationDate>1370274810</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274826</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 </o:Column>
@@ -3302,9 +3302,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>usuario_id</a:Name>
 <a:Code>usuario_id</a:Code>
 <a:CreationDate>1370275565</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370275584</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 </o:Column>
@@ -3313,9 +3313,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>tipo_lancamento_id</a:Name>
 <a:Code>tipo_lancamento_id</a:Code>
 <a:CreationDate>1370277079</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277105</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 </o:Column>
@@ -3324,9 +3324,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>descricao</a:Name>
 <a:Code>descricao</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>varchar(150)</a:DataType>
 <a:Length>150</a:Length>
 </o:Column>
@@ -3335,9 +3335,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>valor</a:Name>
 <a:Code>valor</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>double(8,2)</a:DataType>
 <a:Length>8</a:Length>
 <a:Precision>2</a:Precision>
@@ -3348,9 +3348,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>data_despesa</a:Name>
 <a:Code>data_despesa</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>date</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
@@ -3359,9 +3359,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>data_pagamento</a:Name>
 <a:Code>data_pagamento</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>date</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
@@ -3372,9 +3372,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274874</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Key.Columns>
 <o:Column Ref="o36"/>
 </c:Key.Columns>
@@ -3384,9 +3384,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>fornecedor_id</a:Name>
 <a:Code>fornecedor_id</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274107</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:ConstraintName>fornecedor_id</a:ConstraintName>
 </o:Key>
 </c:Keys>
@@ -3399,9 +3399,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>tb_fornecedor</a:Name>
 <a:Code>tb_fornecedor</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274930</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:PhysicalOptions>ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6</a:PhysicalOptions>
 <a:TotalSavingCurrency/>
 <c:Columns>
@@ -3410,9 +3410,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>id</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 <a:Identity>1</a:Identity>
@@ -3423,9 +3423,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>nome</a:Name>
 <a:Code>nome</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>varchar(200)</a:DataType>
 <a:Length>200</a:Length>
 </o:Column>
@@ -3434,9 +3434,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>descricao</a:Name>
 <a:Code>descricao</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>varchar(250)</a:DataType>
 <a:Length>250</a:Length>
 </o:Column>
@@ -3445,9 +3445,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>data_cadastro</a:Name>
 <a:Code>data_cadastro</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>date</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
@@ -3456,9 +3456,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>cnpj</a:Name>
 <a:Code>cnpj</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DefaultValue>NULL</a:DefaultValue>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
@@ -3468,9 +3468,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>telefone</a:Name>
 <a:Code>telefone</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DefaultValue>NULL</a:DefaultValue>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
@@ -3480,9 +3480,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>email</a:Name>
 <a:Code>email</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>varchar(200)</a:DataType>
 <a:Length>200</a:Length>
 </o:Column>
@@ -3491,9 +3491,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>endereco</a:Name>
 <a:Code>endereco</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>varchar(100)</a:DataType>
 <a:Length>100</a:Length>
 </o:Column>
@@ -3502,9 +3502,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>cidade_id</a:Name>
 <a:Code>cidade_id</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 <a:Mandatory>1</a:Mandatory>
@@ -3516,9 +3516,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274930</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Key.Columns>
 <o:Column Ref="o46"/>
 </c:Key.Columns>
@@ -3533,9 +3533,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>tb_receita</a:Name>
 <a:Code>tb_receita</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277133</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:PhysicalOptions>ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=59</a:PhysicalOptions>
 <a:TotalSavingCurrency/>
 <c:Columns>
@@ -3544,9 +3544,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>id</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277133</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 <a:Mandatory>1</a:Mandatory>
@@ -3556,9 +3556,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>descricao</a:Name>
 <a:Code>descricao</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>varchar(150)</a:DataType>
 <a:Length>150</a:Length>
 </o:Column>
@@ -3567,9 +3567,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>valor</a:Name>
 <a:Code>valor</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>double</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
@@ -3578,9 +3578,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>data</a:Name>
 <a:Code>data</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>date</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
@@ -3589,9 +3589,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>usuario_id</a:Name>
 <a:Code>usuario_id</a:Code>
 <a:CreationDate>1370275382</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370275438</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 </o:Column>
@@ -3600,9 +3600,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>tipo_lancamento_id</a:Name>
 <a:Code>tipo_lancamento_id</a:Code>
 <a:CreationDate>1370276967</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277133</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 </o:Column>
@@ -3613,9 +3613,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277031</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Key.Columns>
 <o:Column Ref="o56"/>
 </c:Key.Columns>
@@ -3630,9 +3630,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>tb_registro_lancamento</a:Name>
 <a:Code>tb_registro_lancamento</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277069</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:PhysicalOptions>ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1</a:PhysicalOptions>
 <a:TotalSavingCurrency/>
 <c:Columns>
@@ -3641,9 +3641,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>id</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1370274497</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277069</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 <a:Mandatory>1</a:Mandatory>
@@ -3653,9 +3653,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>lancamento_id</a:Name>
 <a:Code>lancamento_id</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274633</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 <a:Mandatory>1</a:Mandatory>
@@ -3665,9 +3665,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>data_lancamento</a:Name>
 <a:Code>data_lancamento</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>date</a:DataType>
 <a:Mandatory>1</a:Mandatory>
 </o:Column>
@@ -3678,9 +3678,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>id</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274495</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:ConstraintName>id</a:ConstraintName>
 <a:ExtendedAttributesText>{F4F16ECD-F2F1-4006-AF6F-638D5C65F35E},MYSQL50,57={D1C795B8-8F7B-4AA7-A240-85C5B737C543},ExtUnique,4=true
 
@@ -3691,9 +3691,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>usuario_id</a:Name>
 <a:Code>usuario_id</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274093</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:ConstraintName>usuario_id</a:ConstraintName>
 </o:Key>
 <o:Key Id="o68">
@@ -3701,9 +3701,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>Key_3</a:Name>
 <a:Code>Key_3</a:Code>
 <a:CreationDate>1370277061</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277069</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Key.Columns>
 <o:Column Ref="o63"/>
 </c:Key.Columns>
@@ -3718,9 +3718,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>tb_usuario</a:Name>
 <a:Code>tb_usuario</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370275438</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:PhysicalOptions>ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6</a:PhysicalOptions>
 <a:TotalSavingCurrency/>
 <c:Columns>
@@ -3729,9 +3729,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>id</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370275476</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 <a:Mandatory>1</a:Mandatory>
@@ -3741,9 +3741,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>senha</a:Name>
 <a:Code>senha</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>varchar(50)</a:DataType>
 <a:Length>50</a:Length>
 </o:Column>
@@ -3752,9 +3752,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>nome</a:Name>
 <a:Code>nome</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>varchar(80)</a:DataType>
 <a:Length>80</a:Length>
 </o:Column>
@@ -3763,9 +3763,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>cpf</a:Name>
 <a:Code>cpf</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(15)</a:DataType>
 <a:Length>15</a:Length>
 <a:Mandatory>1</a:Mandatory>
@@ -3775,9 +3775,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>email</a:Name>
 <a:Code>email</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 <a:Mandatory>1</a:Mandatory>
@@ -3789,9 +3789,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Key.Columns>
 <o:Column Ref="o69"/>
 </c:Key.Columns>
@@ -3806,9 +3806,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>vw_despesa_fornecedor</a:Name>
 <a:Code>vw_despesa_fornecedor</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
 <o:Column Id="o75">
@@ -3816,9 +3816,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>id</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 </o:Column>
@@ -3827,9 +3827,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>descricao</a:Name>
 <a:Code>descricao</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>varchar(150)</a:DataType>
 <a:Length>150</a:Length>
 </o:Column>
@@ -3838,9 +3838,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>valor</a:Name>
 <a:Code>valor</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>double(8,2)</a:DataType>
 <a:Length>8</a:Length>
 <a:Precision>2</a:Precision>
@@ -3850,9 +3850,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>data_despesa</a:Name>
 <a:Code>data_despesa</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>date</a:DataType>
 </o:Column>
 <o:Column Id="o79">
@@ -3860,9 +3860,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>fornecedor_id</a:Name>
 <a:Code>fornecedor_id</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 </o:Column>
@@ -3871,9 +3871,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>data_pagamento</a:Name>
 <a:Code>data_pagamento</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>date</a:DataType>
 </o:Column>
 <o:Column Id="o81">
@@ -3881,9 +3881,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>nome</a:Name>
 <a:Code>nome</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>varchar(200)</a:DataType>
 <a:Length>200</a:Length>
 </o:Column>
@@ -3892,9 +3892,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>email</a:Name>
 <a:Code>email</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>varchar(200)</a:DataType>
 <a:Length>200</a:Length>
 </o:Column>
@@ -3903,9 +3903,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>fornecedor_descricao</a:Name>
 <a:Code>fornecedor_descricao</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>varchar(250)</a:DataType>
 <a:Length>250</a:Length>
 </o:Column>
@@ -3914,9 +3914,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>data_cadastro</a:Name>
 <a:Code>data_cadastro</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>date</a:DataType>
 </o:Column>
 <o:Column Id="o85">
@@ -3924,9 +3924,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>cnpj</a:Name>
 <a:Code>cnpj</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 </o:Column>
@@ -3935,9 +3935,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>telefone</a:Name>
 <a:Code>telefone</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 </o:Column>
@@ -3946,9 +3946,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>endereco</a:Name>
 <a:Code>endereco</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>varchar(100)</a:DataType>
 <a:Length>100</a:Length>
 </o:Column>
@@ -3957,9 +3957,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>cidade_id</a:Name>
 <a:Code>cidade_id</a:Code>
 <a:CreationDate>1370274053</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274057</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 </o:Column>
@@ -3970,9 +3970,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>tb_tipo_lancamento</a:Name>
 <a:Code>tb_tipo_lancamento</a:Code>
 <a:CreationDate>1370275819</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277133</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:TotalSavingCurrency/>
 <c:Columns>
 <o:Column Id="o89">
@@ -3980,9 +3980,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>id</a:Name>
 <a:Code>id</a:Code>
 <a:CreationDate>1370275827</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277054</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>int(11)</a:DataType>
 <a:Length>11</a:Length>
 <a:Mandatory>1</a:Mandatory>
@@ -3992,9 +3992,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>nome_tipo</a:Name>
 <a:Code>nome_tipo</a:Code>
 <a:CreationDate>1370275827</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370275885</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>char(1)</a:DataType>
 <a:Length>1</a:Length>
 </o:Column>
@@ -4005,9 +4005,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>Key_1</a:Name>
 <a:Code>Key_1</a:Code>
 <a:CreationDate>1370277045</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277054</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Key.Columns>
 <o:Column Ref="o89"/>
 </c:Key.Columns>
@@ -4024,9 +4024,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>Reference_1</a:Name>
 <a:Code>Reference_1</a:Code>
 <a:CreationDate>1370274583</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274633</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:Cardinality>0..*</a:Cardinality>
 <a:UpdateConstraint>1</a:UpdateConstraint>
 <a:DeleteConstraint>1</a:DeleteConstraint>
@@ -4040,9 +4040,9 @@ LABL 0 Arial,8,N</a:FontList>
 <o:ReferenceJoin Id="o93">
 <a:ObjectID>86EA4EF4-EFA5-4365-8F3D-BBEB607D3D92</a:ObjectID>
 <a:CreationDate>1370274616</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274633</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Object1>
 <o:Column Ref="o64"/>
 </c:Object1>
@@ -4057,9 +4057,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>Reference_2</a:Name>
 <a:Code>Reference_2</a:Code>
 <a:CreationDate>1370274810</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274930</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:Cardinality>0..*</a:Cardinality>
 <a:UpdateConstraint>1</a:UpdateConstraint>
 <a:DeleteConstraint>1</a:DeleteConstraint>
@@ -4076,9 +4076,9 @@ LABL 0 Arial,8,N</a:FontList>
 <o:ReferenceJoin Id="o94">
 <a:ObjectID>D60EB400-EBBD-4C0C-806C-67D4F9159E80</a:ObjectID>
 <a:CreationDate>1370274810</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274810</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Object1>
 <o:Column Ref="o46"/>
 </c:Object1>
@@ -4093,9 +4093,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>Reference_3</a:Name>
 <a:Code>Reference_3</a:Code>
 <a:CreationDate>1370275372</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370275438</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:Cardinality>0..*</a:Cardinality>
 <a:UpdateConstraint>1</a:UpdateConstraint>
 <a:DeleteConstraint>1</a:DeleteConstraint>
@@ -4112,9 +4112,9 @@ LABL 0 Arial,8,N</a:FontList>
 <o:ReferenceJoin Id="o95">
 <a:ObjectID>78C2101B-510B-4324-90AD-ECEB72672B7E</a:ObjectID>
 <a:CreationDate>1370275372</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370275438</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Object1>
 <o:Column Ref="o69"/>
 </c:Object1>
@@ -4129,9 +4129,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>Reference_4</a:Name>
 <a:Code>Reference_4</a:Code>
 <a:CreationDate>1370275476</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370275476</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:Cardinality>0..*</a:Cardinality>
 <a:UpdateConstraint>1</a:UpdateConstraint>
 <a:DeleteConstraint>1</a:DeleteConstraint>
@@ -4148,9 +4148,9 @@ LABL 0 Arial,8,N</a:FontList>
 <o:ReferenceJoin Id="o97">
 <a:ObjectID>B516F615-AE26-43E7-B02F-5B52B43F604A</a:ObjectID>
 <a:CreationDate>1370275476</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370275476</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Object1>
 <o:Column Ref="o36"/>
 </c:Object1>
@@ -4165,9 +4165,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>Reference_5</a:Name>
 <a:Code>Reference_5</a:Code>
 <a:CreationDate>1370275565</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370275565</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:Cardinality>0..*</a:Cardinality>
 <a:UpdateConstraint>1</a:UpdateConstraint>
 <a:DeleteConstraint>1</a:DeleteConstraint>
@@ -4184,9 +4184,9 @@ LABL 0 Arial,8,N</a:FontList>
 <o:ReferenceJoin Id="o98">
 <a:ObjectID>4B3EEA79-4504-4A80-A26D-CD02ED8B0AA6</a:ObjectID>
 <a:CreationDate>1370275565</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370275565</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Object1>
 <o:Column Ref="o69"/>
 </c:Object1>
@@ -4201,9 +4201,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>Reference_6</a:Name>
 <a:Code>Reference_6</a:Code>
 <a:CreationDate>1370275955</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277031</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:Cardinality>0..*</a:Cardinality>
 <a:UpdateConstraint>1</a:UpdateConstraint>
 <a:DeleteConstraint>1</a:DeleteConstraint>
@@ -4220,9 +4220,9 @@ LABL 0 Arial,8,N</a:FontList>
 <o:ReferenceJoin Id="o100">
 <a:ObjectID>DE20FBAB-FBA8-4AC8-BFC1-D7BE2EAFD6D6</a:ObjectID>
 <a:CreationDate>1370275955</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370275955</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Object1>
 <o:Column Ref="o56"/>
 </c:Object1>
@@ -4237,9 +4237,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>Reference_7</a:Name>
 <a:Code>Reference_7</a:Code>
 <a:CreationDate>1370275962</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370275962</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:Cardinality>0..*</a:Cardinality>
 <a:UpdateConstraint>1</a:UpdateConstraint>
 <a:DeleteConstraint>1</a:DeleteConstraint>
@@ -4256,9 +4256,9 @@ LABL 0 Arial,8,N</a:FontList>
 <o:ReferenceJoin Id="o102">
 <a:ObjectID>6DF9470A-0598-4475-B7B6-539CD7CE5195</a:ObjectID>
 <a:CreationDate>1370275962</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370276929</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Object1>
 <o:Column Ref="o36"/>
 </c:Object1>
@@ -4270,9 +4270,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>Reference_8</a:Name>
 <a:Code>Reference_8</a:Code>
 <a:CreationDate>1370277079</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277079</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:Cardinality>0..*</a:Cardinality>
 <a:UpdateConstraint>1</a:UpdateConstraint>
 <a:DeleteConstraint>1</a:DeleteConstraint>
@@ -4289,9 +4289,9 @@ LABL 0 Arial,8,N</a:FontList>
 <o:ReferenceJoin Id="o103">
 <a:ObjectID>2ED96520-C200-43C8-A9DC-34EA83CA75F8</a:ObjectID>
 <a:CreationDate>1370277079</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277079</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Object1>
 <o:Column Ref="o89"/>
 </c:Object1>
@@ -4306,9 +4306,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>Reference_9</a:Name>
 <a:Code>Reference_9</a:Code>
 <a:CreationDate>1370277117</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277133</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:Cardinality>0..*</a:Cardinality>
 <a:UpdateConstraint>1</a:UpdateConstraint>
 <a:DeleteConstraint>1</a:DeleteConstraint>
@@ -4325,9 +4325,9 @@ LABL 0 Arial,8,N</a:FontList>
 <o:ReferenceJoin Id="o104">
 <a:ObjectID>38965249-F6E3-49BE-8953-BBD6455F6A36</a:ObjectID>
 <a:CreationDate>1370277117</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370277133</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Object1>
 <o:Column Ref="o89"/>
 </c:Object1>
@@ -4344,9 +4344,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>PUBLIC</a:Name>
 <a:Code>PUBLIC</a:Code>
 <a:CreationDate>1370274029</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274029</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 </o:Group>
 </c:DefaultGroups>
 <c:TargetModels>
@@ -4355,9 +4355,9 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Name>MySQL 5.0</a:Name>
 <a:Code>MYSQL50</a:Code>
 <a:CreationDate>1370274047</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370274047</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:TargetModelURL>file:///%_DBMS%/mysql50.xdb</a:TargetModelURL>
 <a:TargetModelID>F4F16ECD-F2F1-4006-AF6F-638D5C65F35E</a:TargetModelID>
 <a:TargetModelClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetModelClassID>

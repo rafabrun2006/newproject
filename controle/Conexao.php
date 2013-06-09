@@ -8,7 +8,7 @@
 /**
  * Description of Conexao
  *
- * @author Bruno
+ * @author Administrador
  */
 require_once 'modelo/Conexao.php';
 

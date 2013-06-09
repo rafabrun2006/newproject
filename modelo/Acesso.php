@@ -3,7 +3,7 @@
 /**
  * Description of Acesso
  *
- * author Bruno
+ * author Administrador
  */
 class ModeloAcesso {
 

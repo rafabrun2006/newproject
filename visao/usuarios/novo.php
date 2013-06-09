@@ -22,7 +22,7 @@ $usuario = $controle->acaoUsuarios(@$_REQUEST['acao']);
     <div class="control-group">
         <label class="control-label">Email:</label>
         <div class="controls">
-            <input type="text" name="email">
+            <input type="email" name="email">
         </div>
     </div>
     <div class="control-group">

@@ -8,7 +8,7 @@
 /**
  * Description of Receitas
  *
- * @author Bruno
+ * @author Administrador
  */
 require_once '/modelo/Modelo.php';
 

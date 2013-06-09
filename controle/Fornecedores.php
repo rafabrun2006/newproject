@@ -8,7 +8,7 @@
 /**
  * Description of Fornecedores
  *
- * @author Bruno
+ * @author Administrador
  */
 require_once 'modelo/Fornecedores.php';
 

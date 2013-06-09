@@ -11,9 +11,9 @@
 <a:Name>MER</a:Name>
 <a:Code>MER</a:Code>
 <a:CreationDate>1370387095</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392442</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
 [FolderOptions\Conceptual Data Objects]
@@ -416,9 +416,9 @@ NameToCode=No</a:ModelOptionsText>
 <a:Name>Diagram_1</a:Name>
 <a:Code>DIAGRAM_1</a:Code>
 <a:CreationDate>1370387096</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392305</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DisplayPreferences>[DisplayPreferences]
 
 [DisplayPreferences\CDM]
@@ -1039,18 +1039,18 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>Usuario</a:Name>
 <a:Code>USUARIO</a:Code>
 <a:CreationDate>1370387104</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391901</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Identifiers>
 <o:Identifier Id="o26">
 <a:ObjectID>08C945F8-0E42-4946-8B61-F1D64D87EDAD</a:ObjectID>
 <a:Name>Identifier_1</a:Name>
 <a:Code>IDENTIFIER_1</a:Code>
 <a:CreationDate>1370387145</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370387228</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Identifier.Attributes>
 <o:EntityAttribute Ref="o27"/>
 </c:Identifier.Attributes>
@@ -1063,9 +1063,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o27">
 <a:ObjectID>BEBE028A-74D4-41A9-A444-AA1F57E0CB98</a:ObjectID>
 <a:CreationDate>1370387145</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370387228</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
 <o:DataItem Ref="o28"/>
@@ -1074,9 +1074,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o29">
 <a:ObjectID>764B8FCF-F4C3-4EB2-97A3-1E888EE9CA79</a:ObjectID>
 <a:CreationDate>1370387145</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370387228</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o30"/>
 </c:DataItem>
@@ -1084,9 +1084,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o31">
 <a:ObjectID>2CFD67B8-D120-48E1-BF93-CC521A18CBA2</a:ObjectID>
 <a:CreationDate>1370387145</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370387228</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o32"/>
 </c:DataItem>
@@ -1094,9 +1094,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o33">
 <a:ObjectID>262AF6E2-304F-45EC-A60E-D4ABF8794566</a:ObjectID>
 <a:CreationDate>1370387145</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370387228</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o34"/>
 </c:DataItem>
@@ -1108,18 +1108,18 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>Fornecedor</a:Name>
 <a:Code>FORNECEDOR</a:Code>
 <a:CreationDate>1370387420</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391916</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Identifiers>
 <o:Identifier Id="o35">
 <a:ObjectID>09F61FDB-5D16-4BBA-95FA-BC90699A5434</a:ObjectID>
 <a:Name>Identifier_1</a:Name>
 <a:Code>IDENTIFIER_1</a:Code>
 <a:CreationDate>1370387420</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370387420</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Identifier.Attributes>
 <o:EntityAttribute Ref="o36"/>
 </c:Identifier.Attributes>
@@ -1132,9 +1132,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o36">
 <a:ObjectID>2A4501D0-3A8F-4A34-BC03-46FDFFA82579</a:ObjectID>
 <a:CreationDate>1370387420</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370387420</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
 <o:DataItem Ref="o37"/>
@@ -1143,9 +1143,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o38">
 <a:ObjectID>26F2274C-79FF-4050-AC47-FF3129683DB0</a:ObjectID>
 <a:CreationDate>1370387420</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370387420</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o30"/>
 </c:DataItem>
@@ -1153,9 +1153,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o39">
 <a:ObjectID>B4A87AEF-1EDD-4759-A421-46152BA83C82</a:ObjectID>
 <a:CreationDate>1370387420</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370387420</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o32"/>
 </c:DataItem>
@@ -1163,9 +1163,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o40">
 <a:ObjectID>83C61B2B-D83D-4406-A3B7-534DE215CD62</a:ObjectID>
 <a:CreationDate>1370387420</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370387420</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o34"/>
 </c:DataItem>
@@ -1173,9 +1173,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o41">
 <a:ObjectID>DAF24AFF-DE6F-4696-AE39-6C4E80D215EA</a:ObjectID>
 <a:CreationDate>1370387420</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370387420</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o42"/>
 </c:DataItem>
@@ -1183,9 +1183,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o43">
 <a:ObjectID>9CBBE566-FDAB-4A02-B776-39471DD8CC5C</a:ObjectID>
 <a:CreationDate>1370387427</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391080</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o44"/>
 </c:DataItem>
@@ -1193,9 +1193,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o45">
 <a:ObjectID>E186FDBB-FDA4-4D6A-B1F9-9A99B565446F</a:ObjectID>
 <a:CreationDate>1370391083</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391176</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o46"/>
 </c:DataItem>
@@ -1203,9 +1203,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o47">
 <a:ObjectID>C4FE8BFF-4F4E-4421-8E2D-73E08CD935FF</a:ObjectID>
 <a:CreationDate>1370391083</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391176</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o48"/>
 </c:DataItem>
@@ -1213,9 +1213,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o49">
 <a:ObjectID>51714A87-E365-46E1-A6EB-37781F790619</a:ObjectID>
 <a:CreationDate>1370391083</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391176</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o50"/>
 </c:DataItem>
@@ -1227,18 +1227,18 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>Receita</a:Name>
 <a:Code>RECEITA</a:Code>
 <a:CreationDate>1370391414</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392394</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Identifiers>
 <o:Identifier Id="o51">
 <a:ObjectID>EFE96F8F-2A81-4DC7-A850-6133B7FBB73E</a:ObjectID>
 <a:Name>Identifier_1</a:Name>
 <a:Code>IDENTIFIER_1</a:Code>
 <a:CreationDate>1370391414</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391414</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Identifier.Attributes>
 <o:EntityAttribute Ref="o52"/>
 </c:Identifier.Attributes>
@@ -1251,9 +1251,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o52">
 <a:ObjectID>423FB700-EC20-4AD3-ABBC-8146B4DE7A84</a:ObjectID>
 <a:CreationDate>1370391414</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391414</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
 <o:DataItem Ref="o53"/>
@@ -1262,9 +1262,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o54">
 <a:ObjectID>D77C1CDE-E8F6-4372-8D48-5A507867646F</a:ObjectID>
 <a:CreationDate>1370391414</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391414</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o30"/>
 </c:DataItem>
@@ -1272,9 +1272,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o55">
 <a:ObjectID>BEA088F6-5151-4E9C-835B-4AE6F1636759</a:ObjectID>
 <a:CreationDate>1370391414</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391414</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o32"/>
 </c:DataItem>
@@ -1282,9 +1282,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o56">
 <a:ObjectID>19AC5841-88ED-493D-841E-D0B115E3780D</a:ObjectID>
 <a:CreationDate>1370391414</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391414</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o34"/>
 </c:DataItem>
@@ -1292,9 +1292,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o57">
 <a:ObjectID>3100D7FD-2C50-4C34-9CC9-0B61D4CCAA4E</a:ObjectID>
 <a:CreationDate>1370391414</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391414</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o42"/>
 </c:DataItem>
@@ -1302,9 +1302,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o58">
 <a:ObjectID>846658AF-3846-4A4B-BDBE-52CDC1D276D8</a:ObjectID>
 <a:CreationDate>1370391414</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391414</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o50"/>
 </c:DataItem>
@@ -1316,18 +1316,18 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>Despesa</a:Name>
 <a:Code>DESPESA</a:Code>
 <a:CreationDate>1370391510</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392411</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Identifiers>
 <o:Identifier Id="o59">
 <a:ObjectID>28133930-EF44-4040-B579-0442677C89C6</a:ObjectID>
 <a:Name>Identifier_1</a:Name>
 <a:Code>IDENTIFIER_1</a:Code>
 <a:CreationDate>1370391510</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391510</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Identifier.Attributes>
 <o:EntityAttribute Ref="o60"/>
 </c:Identifier.Attributes>
@@ -1340,9 +1340,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o60">
 <a:ObjectID>A14FE39A-32F4-44FD-9851-1D22C21FB424</a:ObjectID>
 <a:CreationDate>1370391510</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391510</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
 <o:DataItem Ref="o61"/>
@@ -1351,9 +1351,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o62">
 <a:ObjectID>B40D217A-330C-489D-BDD6-80F5EC4D61D1</a:ObjectID>
 <a:CreationDate>1370391510</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391510</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o30"/>
 </c:DataItem>
@@ -1361,9 +1361,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o63">
 <a:ObjectID>0F83C978-A719-4507-B8E1-010DDDC073EA</a:ObjectID>
 <a:CreationDate>1370391510</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391510</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o32"/>
 </c:DataItem>
@@ -1371,9 +1371,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o64">
 <a:ObjectID>037F2E22-F006-4AC9-8C3B-79D90D8F0507</a:ObjectID>
 <a:CreationDate>1370391510</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391510</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o34"/>
 </c:DataItem>
@@ -1381,9 +1381,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o65">
 <a:ObjectID>EC7BE911-410D-498C-900E-D77C0931E038</a:ObjectID>
 <a:CreationDate>1370391510</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391510</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o42"/>
 </c:DataItem>
@@ -1391,9 +1391,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o66">
 <a:ObjectID>19C06523-F4F9-4DCF-BFC0-68B997487377</a:ObjectID>
 <a:CreationDate>1370391510</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391510</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o50"/>
 </c:DataItem>
@@ -1401,9 +1401,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o67">
 <a:ObjectID>71479EA3-F221-4528-B5B6-79E6FAE4EF38</a:ObjectID>
 <a:CreationDate>1370391515</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391565</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o68"/>
 </c:DataItem>
@@ -1415,18 +1415,18 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>RegistroLancamento</a:Name>
 <a:Code>REGISTROLANCAMENTO</a:Code>
 <a:CreationDate>1370391950</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392129</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Identifiers>
 <o:Identifier Id="o69">
 <a:ObjectID>1129F9F3-01B7-4DF8-ACCA-A0F0650D47F6</a:ObjectID>
 <a:Name>Identifier_1</a:Name>
 <a:Code>IDENTIFIER_1</a:Code>
 <a:CreationDate>1370391950</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391950</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Identifier.Attributes>
 <o:EntityAttribute Ref="o70"/>
 </c:Identifier.Attributes>
@@ -1439,9 +1439,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o70">
 <a:ObjectID>8389577F-462D-4309-99DB-00D14EB568EF</a:ObjectID>
 <a:CreationDate>1370391950</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391950</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
 <o:DataItem Ref="o71"/>
@@ -1450,9 +1450,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o72">
 <a:ObjectID>2D845ECB-870C-46AD-9072-0264B96517CC</a:ObjectID>
 <a:CreationDate>1370391950</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391950</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o30"/>
 </c:DataItem>
@@ -1460,9 +1460,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o73">
 <a:ObjectID>B8F7F1E1-6339-49A5-9044-7F963043084D</a:ObjectID>
 <a:CreationDate>1370391950</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391950</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o32"/>
 </c:DataItem>
@@ -1474,18 +1474,18 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>TipoLancamento</a:Name>
 <a:Code>TIPOLANCAMENTO</a:Code>
 <a:CreationDate>1370392150</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392411</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Identifiers>
 <o:Identifier Id="o74">
 <a:ObjectID>BA3E96A2-E8D7-4063-9734-0A52D8870C61</a:ObjectID>
 <a:Name>Identifier_1</a:Name>
 <a:Code>IDENTIFIER_1</a:Code>
 <a:CreationDate>1370392150</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392150</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:Identifier.Attributes>
 <o:EntityAttribute Ref="o75"/>
 </c:Identifier.Attributes>
@@ -1498,9 +1498,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o75">
 <a:ObjectID>6A0DDAF7-00BA-4A24-935C-B48E3127E60D</a:ObjectID>
 <a:CreationDate>1370392150</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392150</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
 <o:DataItem Ref="o76"/>
@@ -1509,9 +1509,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <o:EntityAttribute Id="o77">
 <a:ObjectID>9CE5CD07-D99B-4E24-9943-3FE436A1963A</a:ObjectID>
 <a:CreationDate>1370392150</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392150</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <c:DataItem>
 <o:DataItem Ref="o30"/>
 </c:DataItem>
@@ -1525,9 +1525,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>fk_usuario_id1</a:Name>
 <a:Code>FK_USUARIO_ID1</a:Code>
 <a:CreationDate>1370391575</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391901</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
 <a:Entity2ToEntity1RoleCardinality>0,n</a:Entity2ToEntity1RoleCardinality>
 <c:Object1>
@@ -1542,9 +1542,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>fk_usuario_id2</a:Name>
 <a:Code>FK_USUARIO_ID2</a:Code>
 <a:CreationDate>1370391709</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391892</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:Entity1ToEntity2RoleCardinality>0,1</a:Entity1ToEntity2RoleCardinality>
 <a:Entity2ToEntity1RoleCardinality>0,n</a:Entity2ToEntity1RoleCardinality>
 <c:Object1>
@@ -1559,9 +1559,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>fk_fornecedor_id</a:Name>
 <a:Code>FK_FORNECEDOR_ID</a:Code>
 <a:CreationDate>1370391793</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391916</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
 <a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
 <c:Object1>
@@ -1576,9 +1576,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>fk_tipo_lancamento_id1</a:Name>
 <a:Code>FK_TIPO_LANCAMENTO_ID1</a:Code>
 <a:CreationDate>1370392208</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392411</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
 <a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
 <c:Object1>
@@ -1593,9 +1593,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>fk_tipo_lancamento_id2</a:Name>
 <a:Code>FK_TIPO_LANCAMENTO_ID2</a:Code>
 <a:CreationDate>1370392305</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392394</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:Entity1ToEntity2RoleCardinality>0,1</a:Entity1ToEntity2RoleCardinality>
 <a:Entity2ToEntity1RoleCardinality>0,n</a:Entity2ToEntity1RoleCardinality>
 <c:Object1>
@@ -1612,9 +1612,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>id</a:Name>
 <a:Code>TIPO_LANCAMENTO_ID2</a:Code>
 <a:CreationDate>1370392150</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392150</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
 <o:DataItem Id="o71">
@@ -1622,9 +1622,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>id</a:Name>
 <a:Code>TIPO_LANCAMENTO_ID1</a:Code>
 <a:CreationDate>1370391950</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392042</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
 <o:DataItem Id="o61">
@@ -1632,9 +1632,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>id</a:Name>
 <a:Code>ID_FORNECEDOR3</a:Code>
 <a:CreationDate>1370391510</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391510</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
 <o:DataItem Id="o53">
@@ -1642,9 +1642,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>id</a:Name>
 <a:Code>ID_FORNECEDOR2</a:Code>
 <a:CreationDate>1370391414</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391502</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
 <o:DataItem Id="o37">
@@ -1652,9 +1652,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>id_fornecedor</a:Name>
 <a:Code>ID_FORNECEDOR</a:Code>
 <a:CreationDate>1370387420</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391234</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
 <o:DataItem Id="o28">
@@ -1662,9 +1662,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>id</a:Name>
 <a:Code>ID</a:Code>
 <a:CreationDate>1370387145</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370387228</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
 <o:DataItem Id="o30">
@@ -1672,9 +1672,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>nome_tipo</a:Name>
 <a:Code>NOME_TIPO</a:Code>
 <a:CreationDate>1370387145</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392188</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
 <o:DataItem Id="o32">
@@ -1682,9 +1682,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>lancamento_id</a:Name>
 <a:Code>LANCAMENTO_ID</a:Code>
 <a:CreationDate>1370387145</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392188</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
 <o:DataItem Id="o34">
@@ -1692,9 +1692,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>data_despesa</a:Name>
 <a:Code>DATA_DESPESA</a:Code>
 <a:CreationDate>1370387145</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392129</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>D</a:DataType>
 </o:DataItem>
 <o:DataItem Id="o42">
@@ -1702,9 +1702,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>usuario_id</a:Name>
 <a:Code>USUARIO_ID</a:Code>
 <a:CreationDate>1370387145</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392129</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
 <o:DataItem Id="o44">
@@ -1712,9 +1712,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>cidade_id</a:Name>
 <a:Code>CIDADE_ID</a:Code>
 <a:CreationDate>1370387427</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392129</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
 <o:DataItem Id="o46">
@@ -1722,9 +1722,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>data_cadastro</a:Name>
 <a:Code>DATA_CADASTRO</a:Code>
 <a:CreationDate>1370391083</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392129</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>D</a:DataType>
 </o:DataItem>
 <o:DataItem Id="o48">
@@ -1732,9 +1732,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>telefone</a:Name>
 <a:Code>TELEFONE</a:Code>
 <a:CreationDate>1370391083</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392129</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
 <o:DataItem Id="o50">
@@ -1742,9 +1742,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>tipo_lancamento_id</a:Name>
 <a:Code>TIPO_LANCAMENTO_ID</a:Code>
 <a:CreationDate>1370391083</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370392129</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
 <o:DataItem Id="o68">
@@ -1752,9 +1752,9 @@ Identifiers 0 Arial,8,N</a:FontList>
 <a:Name>fornecedor_id</a:Name>
 <a:Code>FORNECEDOR_ID</a:Code>
 <a:CreationDate>1370391515</a:CreationDate>
-<a:Creator>Bruno</a:Creator>
+<a:Creator>Administrador</a:Creator>
 <a:ModificationDate>1370391565</a:ModificationDate>
-<a:Modifier>Bruno</a:Modifier>
+<a:Modifier>Administrador</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
 </c:DataItems>

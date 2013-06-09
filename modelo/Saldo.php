@@ -8,7 +8,7 @@
 /**
  * Description of Saldo
  *
- * @author Bruno
+ * @author Administrador
  */
 class ModeloSaldo {
 

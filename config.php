@@ -8,7 +8,7 @@
 /**
  * Description of config
  *
- * @author Bruno
+ * @author Administrador
  */
 class config {
     var $nomeusuario = "root";
