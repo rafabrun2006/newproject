@@ -22,19 +22,19 @@ $fornecedor->acaoFornecedor(@$_REQUEST['acao']);
     <div class="control-group">
         <label class="control-label">Data do Cadastro:</label>
         <div class="controls">
-            <input type="text" name="data_cadastro" value="<?php echo date('d/m/Y') ?>">
+            <input type="text" class="date-utils" name="data_cadastro" value="<?php echo date('d/m/Y') ?>">
         </div>
     </div>
     <div class="control-group">
         <label class="control-label">CNPJ:</label>
         <div class="controls">
-            <input type="text" name="cnpj" placeholder="Ex: 99999999999">
+            <input type="text" id="cnpj" name="cnpj" placeholder="Ex: 99999999999">
         </div>
     </div>
     <div class="control-group">
         <label class="control-label">Telefone:</label>
         <div class="controls">
-            <input type="text" name="telefone" placeholder="Ex: 99999999">
+            <input type="text" id="fone" name="telefone" placeholder="Ex: 99999999">
         </div>
     </div>
     <div class="control-group">

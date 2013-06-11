@@ -31,19 +31,19 @@ $despesa = $despesas->acaoDespesas(@$_REQUEST['acao']);
     <div class="control-group">
         <label class="control-label">Valor da Despesa:</label>
         <div class="controls">
-            <input type="text" name="valor" value="<?php echo $despesa->getValor() ?>" size="10">
+            <input type="text" id="moeda" name="valor" value="<?php echo $despesa->getValor() ?>" size="10">
         </div>
     </div>
     <div class="control-group">
         <label class="control-label">Data da Despesa:</label>
         <div class="controls">
-            <input type="text" name="data_despesa" value="<?php echo $despesa->getData_despesa() ?>" size="8">
+            <input type="text" readonly="" name="data_despesa" class="date-utils" value="<?php echo $despesa->getData_despesa() ?>" size="8">
         </div>
     </div>
     <div class="control-group">
         <label class="control-label">Data do Pagamento:</label>
         <div class="controls">
-            <input type="text" name="data_pagamento" value="<?php echo $despesa->getData_pagamento() ?>" size="8">
+            <input type="text" readonly="" name="data_pagamento" class="date-utils" value="<?php echo $despesa->getData_pagamento() ?>" size="8">
         </div>
     </div>
     <div class="form-actions">

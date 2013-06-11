@@ -16,7 +16,7 @@ $usuario = $controle->acaoUsuarios(@$_REQUEST['acao']);
     <div class="control-group">
         <label class="control-label">CPF:</label>
         <div class="controls">
-            <input type="text" name="cpf">
+            <input type="text" id="cpf" name="cpf">
         </div>
     </div>
     <div class="control-group">
@@ -35,6 +35,15 @@ $usuario = $controle->acaoUsuarios(@$_REQUEST['acao']);
         <label class="control-label">Repetir Senha:</label>
         <div class="controls">
             <input type="password" name="nova_senha">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label">Tipo de Usuário:</label>
+        <div class="controls">
+            <select name="tipo_usuario">
+                <option value="1">Administrador</option>
+                <option value="2">Funcionário</option>
+            </select>
         </div>
     </div>
     <div class="form-actions">

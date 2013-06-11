@@ -12,6 +12,7 @@ class ModeloAcesso {
     public $email;
     public $senha;
     public $cpf;
+    public $tipo_usuario;
 
     public function getSession($sessionId) {
         return @$_SESSION['auth'][$sessionId];
@@ -28,24 +29,29 @@ class ModeloAcesso {
         $acesso->email = $acesso->getSession('email');
         $acesso->senha = $acesso->getSession('senha');
         $acesso->cpf = $acesso->getSession('cpf');
+        $acesso->tipo_usuario = $acesso->getSession('tipo_usuario');
 
         return $acesso;
     }
 
     public function acessar($usuario, $senha) {
 
+
         $query = "SELECT * FROM tb_usuario WHERE nome = '" . $usuario . "' and senha= '" . $senha . "'";
         $result = mysql_query($query);
 
-        if ($result) {
-            $res = mysql_fetch_object($result);
+        $res = mysql_fetch_object($result);
 
+        if ($res) {
             $acesso = new ModeloAcesso();
             $acesso->setSession('nome', $res->nome);
             $acesso->setSession('id', $res->id);
             $acesso->setSession('email', $res->email);
             $acesso->setSession('senha', $res->senha);
             $acesso->setSession('cpf', $res->cpf);
+            $acesso->setSession('tipo_usuario', $res->tipo_usuario);
+        } else {
+            ControleMensagem::setMensagem(array('danger', 'Usuário ou senha inválido'));
         }
     }
 

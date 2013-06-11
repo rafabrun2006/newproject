@@ -19,10 +19,15 @@ $conteudo = new ControleConteudo();
         <link rel="stylesheet" type="text/css" href="visao/css/css.css">
         <link rel="stylesheet" type="text/css" href="public/assets/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="public/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="public/assets/css/datepicker.css">
 
-        <script type="text/javascript" src="public/assets/js/jquery.js"></script>
+        <script type="text/javascript" src="public/assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="public/assets/js/bootstrap.js"></script>
         <script type="text/javascript" src="public/assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="public/assets/js/masks.js"></script>
+        <script type="text/javascript" src="public/assets/js/jquery.maskMoney.js"></script>
+        <script type="text/javascript" src="public/assets/js/datepicker/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript" src="public/assets/js/utils.js"></script>
     </head>
 
 

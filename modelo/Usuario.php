@@ -19,8 +19,9 @@ class ModeloUsuario extends Modelo {
     private $nome;
     private $cpf;
     private $email;
+    private $tipo_usuario;
     protected $_table = 'tb_usuario';
-    protected $_fields = array('id', 'senha', 'nome', 'cpf', 'email');
+    protected $_fields = array('id', 'senha', 'nome', 'cpf', 'email', 'tipo_usuario');
     protected $_primary = 'id';
 
     public function getId() {
@@ -63,6 +64,14 @@ class ModeloUsuario extends Modelo {
         $this->email = $email;
     }
 
+    public function getTipo_usuario() {
+        return $this->tipo_usuario;
+    }
+
+    public function setTipo_usuario($tipo_usuario) {
+        $this->tipo_usuario = $tipo_usuario;
+    }
+
     function listarUsuario() {
         $query = 'SELECT * FROM tb_usuario';
         $result = mysql_query($query);
@@ -74,6 +83,7 @@ class ModeloUsuario extends Modelo {
             $usuario->setSenha($res['senha']);
             $usuario->setCpf($res['cpf']);
             $usuario->setEmail($res['email']);
+            $usuario->setTipo_usuario($res['tipo_usuario']);
 
             $lista[] = $usuario;
         }
@@ -106,6 +116,7 @@ class ModeloUsuario extends Modelo {
         $usuario->setSenha($res['senha']);
         $usuario->setEmail($res['email']);
         $usuario->setCpf($res['cpf']);
+        $usuario->setTipo_usuario($res['tipo_usuario']);
 
         return $usuario;
     }

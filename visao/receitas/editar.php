@@ -17,13 +17,13 @@ $receita = $receitas->acaoReceitas($_REQUEST['acao']);
         <div class="control-group">
             <label class="control-label">Valor da Receitas:</label> 
             <div class="controls">
-                <input type="text" name="valor" value="<?php echo $receita->getValor() ?>" size="10">
+                <input type="text" id="moeda" name="valor" value="<?php echo $receita->getValor() ?>" size="10">
             </div>
         </div>
         <div class="control-group">
             <label class="control-label">Data da Receitas:</label> 
             <div class="controls">
-                <input type="text" name="data" size="8" value="<?php echo $receita->getData() ?>">
+                <input type="text" readonly="" class="date-utils" name="data" size="8" value="<?php echo $receita->getData() ?>">
             </div>
         </div>
         <div class="form-actions">

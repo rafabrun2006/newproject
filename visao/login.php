@@ -1,3 +1,4 @@
+<?php echo ControleMensagem::getMensagem() ?>
 <div id="login" align="center">
     Por favor, informe usuario e senha para que possa ter acesso ao sistema.
     <br>
