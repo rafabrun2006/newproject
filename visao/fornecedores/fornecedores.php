@@ -3,9 +3,23 @@ require_once 'controle/Fornecedores.php';
 $fornecedores = new ControleFornecedores();
 $fornecedor = $fornecedores->acaoFornecedor(@$_REQUEST['acao']);
 ?>
-<div class="submenu">
-    <a href="index.php?url=fornecedores/novo"><img src="visao/img/mais_verd.png">Cadastrar Novos Fornecedores</a>
-</div>
+<form class="form-inline">
+    <input type="hidden" name="url" value="receitas\receitas">
+    <div class="control-group span3">
+        <div class="btn-group">
+            <a class="btn btn-primary btn-small" href="index.php?url=fornecedores/novo" title="Cadastrar Novos Fornecedores">
+                <i class="icon-white icon-plus"></i>
+                <strong>Incluir</strong>
+            </a>
+        </div>
+    </div>
+    <div class="control-group span5">
+        <div class="controls">
+            Filtro: <input placeholder="Nome do fornecedor" type="text" name="consulta">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+        </div>
+    </div>
+</form>
 <table class="table table-striped">
     <tr>
         <th>Cod</th>

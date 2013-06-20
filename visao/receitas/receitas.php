@@ -1,19 +1,34 @@
-<div class="submenu">
-    <a href="index.php?url=receitas/nova"><font color="green"><img src="visao/img/mais_verd.png">Incluir Novas Receitas</font></a>
-</div>
 <?php
-    require_once 'controle/Receitas.php';
-    $receitas = new ControleReceitas();
-    $receitas->acaoReceitas(@$_REQUEST['acao']);
+require_once 'controle/Receitas.php';
+$receitas = new ControleReceitas();
+$receitas->acaoReceitas(@$_REQUEST['acao']);
 ?>
+<form class="form-inline">
+    <input type="hidden" name="url" value="receitas\receitas">
+    <div class="control-group span3">
+        <div class="btn-group">
+            <a class="btn btn-primary btn-small" href="index.php?url=receitas/nova" title="Incluir Novas Receitas">
+                <i class="icon-white icon-plus"></i>
+                <strong>Incluir</strong>
+            </a>
+        </div>
+    </div>
+    <div class="control-group span5">
+        <label class="control-label">
+            <div class="controls">
+                Filtro: <input placeholder="Nome da receita" type="text" name="consulta">
+            </div>
+        </label>
+        <button class="btn btn-primary" type="submit">Buscar</button>
+    </div>
+</form>
 <table class="table table-striped">
     <tr>
         <th>Codigo</th>
         <th>Nome</th>
         <th>Data</th>
         <th>Valor</th>
-        <th>Editar</th>
-        <th>Excluir</th>
+        <th>Opções</th>
     </tr>
     <?php
     foreach ($receitas->receitas ? : array() as $lista) {
@@ -22,9 +37,13 @@
             <td width="10" id="centro"><?php echo $lista->getId() ?></td>
             <td><?php echo $lista->getDescricao() ?></td>
             <td><?php echo $lista->getData() ?></td>
-            <td><?php echo $lista->getValor() ?></td>
-            <td width="10"><a class="icon-edit" href="index.php?url=receitas/editar&acao=editar&&id=<?php echo $lista->getId() ?>"></a></td>
-            <td width="10"><a class="icon-trash" href="index.php?url=receitas/receitas&acao=excluir&id=<?php echo $lista->getId() ?>"></a></td>
+            <td><?php echo number_format($lista->getValor(), 2, ',', '.') ?></td>
+            <td width="80">
+                <div class="btn-group">
+                    <a class="btn btn-small" href="index.php?url=receitas/editar&acao=editar&&id=<?php echo $lista->getId() ?>"><i class="icon-edit"></i></a>
+                    <a class="btn btn-danger btn-small" href="index.php?url=receitas/receitas&acao=excluir&id=<?php echo $lista->getId() ?>"><i class="icon-trash icon-white"></i></a>
+                </div>
+            </td>
         </tr>
         <?php
     }

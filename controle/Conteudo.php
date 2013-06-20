@@ -21,7 +21,7 @@ class ControleConteudo {
             if (isset($url)) {
                 include_once 'visao/' . $url . ".php";
             } else {
-                include_once 'visao/despesas/despesas.php';
+                include_once 'visao/inicio.php';
             }
         } else {
             include_once 'visao/login.php';

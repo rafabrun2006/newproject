@@ -41,7 +41,7 @@ class ModeloReceitas extends Modelo {
     }
 
     public function getData() {
-        return $this->data;
+        return date('d-m-Y', strtotime($this->data));
     }
 
     public function setData($data) {
