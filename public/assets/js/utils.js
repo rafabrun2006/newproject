@@ -15,7 +15,7 @@ $(document).ready(function() {
     $('.date-utils').attr('readonly', 'readonly');
 
     $('#auto-complete').typeahead({
-            source: {['nome']},
+            source: "",
     });
 
 });
