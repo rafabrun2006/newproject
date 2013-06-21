@@ -9,10 +9,14 @@ $(document).ready(function() {
     $('#moeda').maskMoney();
 
     $('.date-utils').datepicker({
-        format: 'dd/mm/yyyy'
+        format: 'dd-mm-yyyy'
     });
     
     $('.date-utils').attr('readonly', 'readonly');
+
+    $('#auto-complete').typeahead({
+            source: {['nome']},
+    });
 
 });
 

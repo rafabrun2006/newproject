@@ -23,7 +23,7 @@ class ControleReceitas extends ModeloReceitas {
         if (method_exists($this, $acao)) {
             return $this->$acao();
         } else {
-            return $this->receitas = $this->listarReceitas();
+            return $this->receitas = $this->listarReceitas($_POST);
         }
     }
 

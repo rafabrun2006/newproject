@@ -3,6 +3,7 @@ require_once 'controle/Fornecedores.php';
 $fornecedores = new ControleFornecedores();
 $fornecedor = $fornecedores->acaoFornecedor(@$_REQUEST['acao']);
 ?>
+<br>
 <form class="form-inline">
     <input type="hidden" name="url" value="receitas\receitas">
     <div class="control-group span3">
@@ -11,12 +12,6 @@ $fornecedor = $fornecedores->acaoFornecedor(@$_REQUEST['acao']);
                 <i class="icon-white icon-plus"></i>
                 <strong>Incluir</strong>
             </a>
-        </div>
-    </div>
-    <div class="control-group span5">
-        <div class="controls">
-            Filtro: <input placeholder="Nome do fornecedor" type="text" name="consulta">
-            <button class="btn btn-primary" type="submit">Buscar</button>
         </div>
     </div>
 </form>

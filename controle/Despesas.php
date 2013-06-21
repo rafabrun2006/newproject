@@ -56,11 +56,15 @@ class ControleDespesas extends ModeloDespesas {
     }
 
     public function gravar() {
-
+        
         if ($_POST) {
-            $_REQUEST['data_despesa'] = date('Y-m-d', strtotime($_REQUEST['data_despesa']));
-            $_REQUEST['data_pagamento'] = date('Y-m-d', strtotime($_REQUEST['data_pagamento']));
-
+            if($_REQUEST['data_despesa']){
+                $_REQUEST['data_despesa'] = date('Y-m-d', strtotime($_REQUEST['data_despesa']));
+            }
+            if($_REQUEST['data_pagamento']){
+                $_REQUEST['data_pagamento'] = date('Y-m-d', strtotime($_REQUEST['data_pagamento']));
+            }
+            
             if ($_REQUEST) {
                 if ($this->despesas->gravarDespesa($_REQUEST)) {
                     ControleMensagem::setMensagem(array('success', 'Dados gravados com sucesso'));

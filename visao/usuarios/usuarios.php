@@ -4,6 +4,7 @@ $controle = new ControleUsuario();
 $usuarios = $controle->acaoUsuarios(@$_REQUEST['acao']);
 ?>
 <div>
+    <input type="text" name="" id="auto-complete">
     <a href="?url=usuarios/novo"><h4><i class="icon-plus"></i> Novo Usuário</h4></a>
     <fieldset>
         <table class="table table-bordered table-striped">

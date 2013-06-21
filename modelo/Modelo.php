@@ -26,15 +26,17 @@ class Modelo extends ControleConexao {
         $values = array();
 
         foreach ($data as $key => $value) {
-            if (in_array($key, $this->_fields)) {
-                $fields[] = $key;
-                $values[] = "'" . $value . "'";
+            if ($value) {
+                if (in_array($key, $this->_fields)) {
+                    $fields[] = $key;
+                    $values[] = "'" . $value . "'";
+                }
             }
         }
 
         $this->sql = 'INSERT INTO ' . $this->_table . ' (' . implode(', ', $fields) . ') 
                   VALUES (' . implode(", ", $values) . ')';
-
+        
         return $result = mysql_query($this->sql);
     }
 
@@ -80,6 +82,18 @@ class Modelo extends ControleConexao {
         $result = mysql_query($this->sql);
 
         return mysql_fetch_object($result);
+    }
+
+    public function montaWhereAnd($data) {
+        $values = array();
+
+        foreach ($data as $key => $value) {
+            if (in_array($key, $this->_fields)) {
+                $values[] = "{$key} = '{$value}'";
+            }
+        }
+
+        return implode(', ', $values);
     }
 
 }

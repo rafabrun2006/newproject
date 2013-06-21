@@ -3,8 +3,8 @@ require_once 'controle/Receitas.php';
 $receitas = new ControleReceitas();
 $receitas->acaoReceitas(@$_REQUEST['acao']);
 ?>
-<form class="form-inline">
-    <input type="hidden" name="url" value="receitas\receitas">
+<br>
+<form method="post">
     <div class="control-group span3">
         <div class="btn-group">
             <a class="btn btn-primary btn-small" href="index.php?url=receitas/nova" title="Incluir Novas Receitas">
@@ -12,14 +12,6 @@ $receitas->acaoReceitas(@$_REQUEST['acao']);
                 <strong>Incluir</strong>
             </a>
         </div>
-    </div>
-    <div class="control-group span5">
-        <label class="control-label">
-            <div class="controls">
-                Filtro: <input placeholder="Nome da receita" type="text" name="consulta">
-            </div>
-        </label>
-        <button class="btn btn-primary" type="submit">Buscar</button>
     </div>
 </form>
 <table class="table table-striped">

@@ -3,23 +3,7 @@ require_once 'controle/Despesas.php';
 $despesa = new ControleDespesas();
 $despesa->acaoDespesas(@$_REQUEST['acao']);
 ?>
-<form class="form-inline">
-    <input type="hidden" name="url" value="receitas\receitas">
-    <div class="control-group span3">
-        <div class="btn-group">
-            <a class="btn btn-primary btn-small" href="index.php?url=despesas/nova" title="Incluir Novas Despesas">
-                <i class="icon-white icon-plus"></i>
-                <strong>Incluir</strong>
-            </a>
-        </div>
-    </div>
-    <div class="control-group span5">
-        <div class="controls">
-            Filtro: <input placeholder="Nome da despesa" type="text" name="consulta">
-            <button class="btn btn-primary" type="submit">Buscar</button>
-        </div>
-    </div>
-</form>
+<legend>Despesas</legend>
 <table class="table table-striped">
     <tr>
         <th>Codigo</th>

@@ -72,8 +72,10 @@ class ModeloReceitas extends Modelo {
         $this->usuario_id = $usuario_id;
     }
 
-    public function listarReceitas() {
+    public function listarReceitas(array $where = null) {
 
+        echo $this->montaWhereAnd($where);
+        
         $query = "SELECT * FROM tb_receita WHERE usuario_id = " . ControleAcesso::getUsuario()->id;
         $result = mysql_query($query);
 

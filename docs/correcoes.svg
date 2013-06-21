@@ -1,0 +1,11 @@
+1 - Não mostrar os que já estão cadastrados na tela. - OK
+2 - Melhorar o design da PRINCIPAL.
+3 - Relatório filtrar por data, EX: 01/01/2013 à 01/02/2013. - OK
+4 - Mostrar na tela, exemplo Receitas : INCLUIR RECEITAS, EDITAR RECEITAS, EXCLUIR RECEITAS E CONSULTAR RECEITAS, A MESMA SITUAÇÃO PARA USUÁRIO QUE VAI SER O NOSSO OUTRO CASO DE USO
+fazer isso com os 3 que estiver em funcionamento. - OK
+5 - Somente 3 casos(DESPESAS,USUÁRIO,RELATORIO DE RECEITA E DESPESA) de uso em funcionamento. - OK
+6 - Arrumar o INDEX, pois quando faz login ele direciona para a página de despesas, tem que ir para PRINCIPAL. - OK
+
+7 - auto-complete nome pessoa
+8 - mensagem de confirmação de exclusao
+9 - consertar gravação de despesa

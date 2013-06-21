@@ -18,7 +18,7 @@ $despesa->acaoDespesas(@$_REQUEST['acao']);
         <label class="control-label">Fornecedor:</label>
         <div class="controls">
             <select name="fornecedor_id">
-                <option>Selecione</option>
+                <option value="">Selecione</option>
                 <?php foreach ($despesa->fornecedores() as $value): ?>
                     <option value="<?php echo $value->getId() ?>"><?php echo $value->getNome() ?></option>
                 <?php endforeach; ?>
