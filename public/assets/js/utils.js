@@ -12,10 +12,18 @@ $(document).ready(function() {
         format: 'dd-mm-yyyy'
     });
     
-    $('.date-utils').attr('readonly', 'readonly');
+    $('.date-utils').mask('99-99-9999');
 
     $('#auto-complete').typeahead({
             source: "",
+    });
+    
+    $('.btn-danger').click(function(){
+       if(confirm("Deseja realmente executar esta operação?")){
+           return true;
+       }else{
+           return false;
+       }
     });
 
 });

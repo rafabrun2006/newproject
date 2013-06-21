@@ -26,8 +26,7 @@ $fornecedor = $fornecedores->acaoFornecedor(@$_REQUEST['acao']);
         <th>Email</th>
         <th>Cidade</th>
         <th>Endereço</th>
-        <th>Editar</th>
-        <th>Excluir</th>
+        <th>Opções</th>
     </tr>
     <?php foreach ($fornecedor as $lista): ?>
         <tr>
@@ -40,8 +39,12 @@ $fornecedor = $fornecedores->acaoFornecedor(@$_REQUEST['acao']);
             <td><?php echo $lista->getEmail() ?></td>
             <td><?php echo $lista->getCidade() ?></td>
             <td><?php echo $lista->getEndereco() ?></td>
-            <td><a class="icon-edit" href='index.php?url=fornecedores/editar&acao=editar&id=<?php echo $lista->getId() ?>'></a></td>
-            <td><a class="icon-trash" href='index.php?url=fornecedores/fornecedores&acao=excluir&id=<?php echo $lista->getId() ?>'></a></td>
+            <td>
+                <div class="btn-group">
+                    <a class="btn" href='index.php?url=fornecedores/editar&acao=editar&id=<?php echo $lista->getId() ?>'><i class="icon-edit"></i></a>
+                    <a class="btn btn-danger" href='index.php?url=fornecedores/fornecedores&acao=excluir&id=<?php echo $lista->getId() ?>'><i class="icon-trash icon-white"></i></a>
+                </div>
+            </td>
         </tr>
     <?php endforeach; ?>
 </table>

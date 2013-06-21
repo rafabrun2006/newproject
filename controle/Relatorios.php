@@ -30,7 +30,7 @@ class ControleRelatorios extends Modelo {
             $where .= $dtInicio ? "'{$dtInicio}'" : '';
             $where .= $dtFim ? ' AND ' . "'{$dtFim}'" : '';
 
-            echo $sql = 'SELECT * FROM vw_despesa_fornecedor 
+            $sql = 'SELECT * FROM vw_despesa_fornecedor 
                      WHERE data_despesa BETWEEN ' . $where;
             $result = mysql_query($sql);
 

@@ -3,17 +3,7 @@ require_once 'controle/Receitas.php';
 $receitas = new ControleReceitas();
 $receitas->acaoReceitas(@$_REQUEST['acao']);
 ?>
-<br>
-<form method="post">
-    <div class="control-group span3">
-        <div class="btn-group">
-            <a class="btn btn-primary btn-small" href="index.php?url=receitas/nova" title="Incluir Novas Receitas">
-                <i class="icon-white icon-plus"></i>
-                <strong>Incluir</strong>
-            </a>
-        </div>
-    </div>
-</form>
+<legend>Receitas</legend>
 <table class="table table-striped">
     <tr>
         <th>Codigo</th>

@@ -70,7 +70,7 @@ class ModeloDespesas extends Modelo {
     }
 
     public function getData_despesa() {
-        return date('d/m/Y', strtotime($this->data_despesa));
+        return $this->data_despesa ? date('d/m/Y', strtotime($this->data_despesa)) : '';
     }
 
     public function setData_despesa($data_despesa) {
@@ -78,7 +78,7 @@ class ModeloDespesas extends Modelo {
     }
 
     public function getData_pagamento() {
-        return date('d/m/Y', strtotime($this->data_pagamento));
+        return $this->data_pagamento ? date('d/m/Y', strtotime($this->data_pagamento)) : '';
     }
 
     public function setData_pagamento($data_pagamento) {

@@ -42,8 +42,9 @@ class ControleDespesas extends ModeloDespesas {
 
             if ($_REQUEST) {
                 if ($this->despesas->editarDespesas($_REQUEST)) {
-
                     ControleMensagem::setMensagem(array('success', 'Dados gravados com sucesso'));
+                    header('Location: index.php?url=despesas/despesas');
+                }else{
                     header('Location: index.php?url=despesas/despesas');
                 }
             } else {
@@ -58,16 +59,15 @@ class ControleDespesas extends ModeloDespesas {
     public function gravar() {
         
         if ($_POST) {
-            if($_REQUEST['data_despesa']){
-                $_REQUEST['data_despesa'] = date('Y-m-d', strtotime($_REQUEST['data_despesa']));
-            }
-            if($_REQUEST['data_pagamento']){
-                $_REQUEST['data_pagamento'] = date('Y-m-d', strtotime($_REQUEST['data_pagamento']));
-            }
+
+            $_REQUEST['data_despesa'] = $_REQUEST['data_despesa'] ? date('Y-m-d', strtotime($_REQUEST['data_despesa'])) : NULL;
+            $_REQUEST['data_pagamento'] = $_REQUEST['data_pagamento'] ? date('Y-m-d', strtotime($_REQUEST['data_pagamento'])) : NULL;
             
             if ($_REQUEST) {
                 if ($this->despesas->gravarDespesa($_REQUEST)) {
                     ControleMensagem::setMensagem(array('success', 'Dados gravados com sucesso'));
+                    header('Location: index.php?url=despesas/despesas');
+                }else{
                     header('Location: index.php?url=despesas/despesas');
                 }
             } else {
