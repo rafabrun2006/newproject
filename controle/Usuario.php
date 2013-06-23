@@ -59,6 +59,12 @@ class ControleUsuario extends ModeloUsuario {
             header('Location: index.php?url=usuarios/usuarios');
         }
     }
+    
+    public function autoCompleteAjax(){
+        $data = array(1=>"PHP", 2=>"Mysql", 3=>"Java");
+        
+        return json_encode($data);
+    }
 
 }
 

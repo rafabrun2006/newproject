@@ -11,6 +11,13 @@ ControleAcesso::acessar();
 $conteudo = new ControleConteudo();
 ?>
 
+<?php
+//Quando conteudo trazido por uma requisição jQuery Ajax
+if (@$_REQUEST['ajax']) {
+    $conteudo->conteudo() . die;
+}
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -27,10 +34,9 @@ $conteudo = new ControleConteudo();
         <script type="text/javascript" src="public/assets/js/masks.js"></script>
         <script type="text/javascript" src="public/assets/js/jquery.maskMoney.js"></script>
         <script type="text/javascript" src="public/assets/js/datepicker/bootstrap-datepicker.min.js"></script>
+        <!--<script type="text/javascript" src="public/assets/js/bootstrap-typeahead.js"></script>-->
         <script type="text/javascript" src="public/assets/js/utils.js"></script>
     </head>
-
-
     <body>
         <div id="titulo">
             <h2>Financeiro</h2>
@@ -45,6 +51,6 @@ $conteudo = new ControleConteudo();
             <?php echo ControleMensagem::getMensagem() ?>
             <?php $conteudo->conteudo() ?>
         </div>
-        <?php isset(ControleAcesso::getUsuario()->id) ? require_once 'visao/saldo.php' : ''; ?>
+        <?php in_array(ControleAcesso::getUsuario()->tipo_usuario, array(1)) ? require_once 'visao/saldo.php' : ''; ?>
     </body>
 </html>

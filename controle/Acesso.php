@@ -24,6 +24,7 @@ class ControleAcesso extends ModeloAcesso {
             }
         } else if (@$_REQUEST['acao'] == 'sair') {
             parent::sair();
+            header('Location: index.php');
         }
     }
 

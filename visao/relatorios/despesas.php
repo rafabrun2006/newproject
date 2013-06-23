@@ -5,8 +5,8 @@ $relatorios = new ControleRelatorios();
 <form method="post">
     <div class="input-append">
         <div class="btn-group">
-            <input class="input-medium date-utils" type="date" name="data_ini" placeholder="Data Inicio">
-            <input class="input-medium date-utils" type="date" name="data_fim" placeholder="Data Fim">
+            <input class="input-medium date-utils" type="text" name="data_ini" placeholder="Data Inicio">
+            <input class="input-medium date-utils" type="text" name="data_fim" placeholder="Data Fim">
             <button class="btn btn-primary" type="submit">Buscar</button>
         </div>
     </div>
