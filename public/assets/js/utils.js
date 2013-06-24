@@ -24,15 +24,6 @@ $(document).ready(function() {
         }
     });
 
-    $('#auto-complete').typeahead({
-        source: function(typeahead, query) {
-            return $.get('index.php?url=usuarios/auto-complete-ajax&ajax=1&acao=autoCompleteAjax', 
-            {query: query}, function(data) {
-                return typeahead.process(data);
-            });
-        }
-    });
-
 //    var call = $.ajax({
 //        data: {data: 'data'},
 //        url: 'index.php?url=usuarios/auto-complete-ajax&ajax=1&acao=autoCompleteAjax',

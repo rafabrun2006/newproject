@@ -72,8 +72,14 @@ class ModeloUsuario extends Modelo {
         $this->tipo_usuario = $tipo_usuario;
     }
 
-    function listarUsuario() {
+    function listarUsuario($where) {
+        
         $query = 'SELECT * FROM tb_usuario';
+        
+        if($where){
+            $query .= " WHERE nome like '%".$where['nome']."%'";
+        }
+        
         $result = mysql_query($query);
 
         while ($res = mysql_fetch_array($result)) {

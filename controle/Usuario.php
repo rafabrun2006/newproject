@@ -24,7 +24,7 @@ class ControleUsuario extends ModeloUsuario {
         if (method_exists($this, $acao)) {
             return $this->$acao();
         } else {
-            return $this->usuarios = $this->usuarios->listarUsuario();
+            return $this->usuarios = $this->usuarios->listarUsuario(@$_REQUEST);
         }
     }
 

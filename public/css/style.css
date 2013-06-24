@@ -1,0 +1,249 @@
+
+/******************************************************************
+This is the CSS Reset
+******************************************************************/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-image:url(../images/background.png);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/******************************************************************
+General CSS
+******************************************************************/
+
+#content {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+p {
+	font-family: Verdana, Arial, sans-serif;
+	line-height: 1.6em;
+	color: #848484;
+	font-size: 8pt;
+}
+h1 {
+	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	line-height: 1.6em;
+	color: #454544;
+	text-decoration: none;
+	font-size: 22pt;
+}
+h2 {
+	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	line-height: 1.6em;
+	color: #454544;
+	text-decoration: none;
+	font-size: 18pt;
+}
+h3 {
+	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	line-height: 1.6em;
+	color: #454544;
+	text-decoration: none;
+	font-size: 16pt;
+}
+h4 {
+	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	line-height: 1.6em;
+	color: #454544;
+	text-decoration: none;
+	font-size: 14pt;
+}
+h5 {
+	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	line-height: 1.6em;
+	color: #454544;
+	text-decoration: none;
+	font-size: 12pt;
+}
+h6 {
+	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	line-height: 1.6em;
+	color: #454544;
+	text-decoration: none;
+	font-size: 10pt;
+}
+
+/***************************************************
+COLUMNS and FEATURES
+***************************************************/
+.one-third-last {
+	width:300px;
+	float: right;
+}
+blockquote {
+	font-style:italic;
+	font-size:20px;
+	margin-right:20px;
+	padding-left:20px;
+	margin-left:20px;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	color:#333;
+	text-align: left;
+	background-image: url(../images/blockquote.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+/******************************************************************
+Header CSS
+******************************************************************/
+
+#header-wrapper {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	padding-top: 50px;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #d6d6d6;
+	z-index: 500;
+	background-color: #FFF;
+}
+#menu-wrapper {
+	position: fixed;
+	top: 6px;
+	width: 960px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 25px;
+	z-index: 500;
+}
+#top-line {
+	position: fixed;
+	height: 9px;
+	top: 0px;
+	width: 100%;
+	z-index: 550;
+	border-top: 5px;
+	border-style: solid;
+	border-color: #7D0000;
+}
+#logo {
+	width: 450px;
+	height: 75px;
+	padding-left: 20px;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	margin-top:-10px;
+}
+#main-menu {
+	float: right;
+	margin-top: 10px;
+	padding-top: 5px;
+	height: 30px;
+	padding-right: 10px;
+}
+#main-menu li {
+	display: inline;
+	list-style: none;
+}
+#main-menu a {
+	font-family: 'Droid Sans', Verdana, Arial, sans-serif;
+	color: #666;
+	text-decoration: none;
+	font-size: 13px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+#main-menu a:hover {
+	color: #333;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #7D0000;
+	padding-bottom: 37px;
+}
+@-moz-document url-prefix() {
+#main-menu a:hover {
+ padding-bottom: 36px;
+}
+}
+#main-menu a:active {
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #7D0000;
+}
+/******************************************************************
+Some Nivo Customization CSS
+For easy editing (the main Nivo CSS is in nivo-theme.css)
+******************************************************************/
+
+#top-spacer {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.2em;
+	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-size: 22px;
+	color: #a3a3a3;
+	text-align: center;
+	padding-top: 145px;
+	padding-bottom: 0px;
+	font-style: italic;
+}
+.theme-minima .nivo-caption {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 14px;
+}
+.theme-minima .nivo-caption h1 {
+	padding: 50px 10px 5px 10px;
+}
+.theme-minima .nivo-caption p {
+	padding: 5px 20px 20px 20px;
+	text-align: justify;
+}
+
+/******************************************************************
+About us CSS
+******************************************************************/
+
+#about {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+	display: inline;
+}
+.about-left {
+	width: 550px;
+	float: left;
+	padding-right: 90px;
+	border-right: 1px;
+	border-style: solid;
+	border-color: #d6d6d6;
+	padding-bottom: 50px;
+}
+#about p {
+	text-align: justify;
+}

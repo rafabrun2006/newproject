@@ -1,0 +1,8 @@
+/**
+ * minima - Custom JS.
+ * Copyright (c) 2011 92five.net
+ * @version 1.0
+ *
+ * http://92five.net
+ */
+$(document).ready(function(){function c(a,b){var c=$("<ul>",{"class":"hidden"});$.each(b,function(){$(this).clone().appendTo(c)});c.appendTo("#container");var d=$("<a>",{html:a,href:"#",data:{list:c}}).appendTo("#filter")}$("a.single_image").fancybox();$("a#inline").fancybox({hideOnContentClick:true});$("a.group").fancybox({transitionIn:"elastic",transitionOut:"elastic",speedIn:600,speedOut:200,overlayShow:false});$("a[href*=#]").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var a=$(this.hash);a=a.length&&a||$("[name="+this.hash.slice(1)+"]");if(a.length){var b=a.offset().top;$("html,body").animate({scrollTop:b},1e3);return false}}});$("ul#filter a").click(function(){$(this).css("outline","none");$("ul#filter .current").removeClass("current");$(this).parent().addClass("current");var a=$(this).text().toLowerCase().replace(" ","-");if(a=="all"){$("ul#portfolio li.hidden").fadeIn("slow").removeClass("hidden")}else{$("ul#portfolio li").each(function(){if(!$(this).hasClass(a)){$(this).fadeOut("normal").addClass("hidden")}else{$(this).fadeIn("slow").removeClass("hidden")}})}return false});var a=$("#stage li"),b={};a.each(function(a){var c=$(this),d=c.data("tags").split(",");c.attr("data-id",a);$.each(d,function(a,d){d=$.trim(d);if(!(d in b)){b[d]=[]}b[d].push(c)})});c("Everything",a);$.each(b,function(a,b){c(a,b)});$("#filter a").live("click",function(a){var b=$(this);b.addClass("active").siblings().removeClass("active");$("#stage").quicksand(b.data("list").find("li"));a.preventDefault()});$("#filter a:first").click()})
